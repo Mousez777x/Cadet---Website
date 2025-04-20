@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadet Pilot Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    
+    .mobile-menu {
+      display: none;
+    }
+    
+    @media (max-width: 768px) {
+      .desktop-menu {
+        display: none;
+      }
+      
+      .mobile-menu-button {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-bold">✈️ Cadet Pilot Hub</a>
+      
+      <!-- Mobile menu button -->
+      <button class="md:hidden mobile-menu-button" onclick="toggleMobileMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      
+      <!-- Desktop navigation -->
+      <nav class="hidden md:flex space-x-6 desktop-menu">
+        <a href="#assessments" class="hover:text-blue-600">Assessments</a>
+        <a href="#products" class="hover:text-blue-600">Products</a>
+        <a href="#blog" class="hover:text-blue-600">Blog</a>
+        <a href="#mentorship" class="hover:text-blue-600">Mentorship</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+      </nav>
+    </div>
+    
+    <!-- Mobile navigation -->
+    <nav id="mobile-menu" class="md:hidden bg-white px-4 py-2 flex-col space-y-4 pb-4 mobile-menu">
+      <a href="#assessments" class="hover:text-blue-600">Assessments</a>
+      <a href="#products" class="hover:text-blue-600">Products</a>
+      <a href="#blog" class="hover:text-blue-600">Blog</a>
+      <a href="#mentorship" class="hover:text-blue-600">Mentorship</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-100 py-12 text-center px-4">
+      <h2 class="text-4xl font-bold mb-2">Your Journey to the Flight Deck Starts Here</h2>
+      <p class="text-lg mb-6">Pilot assessments, guidance, and gear — built for cadets in the UAE & Middle East.</p>
+      <div class="space-x-4">
+        <a href="#assessments" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 inline-block">
+          Explore Assessments
+        </a>
+        <a href="#products" class="bg-gray-300 text-gray-800 px-6 py-2 rounded hover:bg-gray-400 inline-block">
+          Join Product Waitlist
+        </a>
+      </div>
+    </section>
+
+    <!-- Home Assessments Preview -->
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-6">🎓 Cadet Pilot Assessments</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-white shadow rounded">
+          <h4 class="font-semibold text-xl mb-2">Math Preparation</h4>
+          <p>Algebra, speed/distance/time, logic-based problems.</p>
+        </div>
+        <div class="p-4 bg-white shadow rounded">
+          <h4 class="font-semibold text-xl mb-2">Physics Preparation</h4>
+          <p>Forces, motion, energy — all relevant to aviation physics.</p>
+        </div>
+        <div class="p-4 bg-white shadow rounded">
+          <h4 class="font-semibold text-xl mb-2">English & Aviation Terminology</h4>
+          <p>Improve ICAO-standard communication and vocabulary.</p>
+        </div>
+      </div>
+      <div class="mt-6 text-center">
+        <a href="#assessments" class="text-blue-600 hover:underline">
+          View all assessment resources →
+        </a>
+      </div>
+    </section>
+
+    <!-- Home Products Preview -->
+    <section class="bg-gray-100 py-12 px-6 text-center">
+      <h3 class="text-3xl font-bold mb-4">🛍️ Pilot Products</h3>
+      <p class="text-lg mb-6">Coming Soon — Pilot Wallets, Logbooks, and Accessories.</p>
+      <a href="#products" class="text-blue-600 hover:underline">
+        Learn more about our products →
+      </a>
+    </section>
+
+    <!-- Home Blog Preview -->
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-6">📚 Free Resources / Blog</h3>
+      <ul class="space-y-4">
+        <li>✈️ How to Apply for UAE Cadet Programs</li>
+        <li>🧠 Study Hacks That Work</li>
+        <li>🎤 How I Passed My Etihad Assessment</li>
+      </ul>
+      <div class="mt-6 text-center">
+        <a href="#blog" class="text-blue-600 hover:underline">
+          Read all blog posts →
+        </a>
+      </div>
+    </section>
+
+    <!-- Assessments Section -->
+    <section id="assessments" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Cadet Pilot Assessments</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Comprehensive preparation materials for all aspects of cadet pilot assessments
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Assessment Categories</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <div class="bg-blue-100 p-4">
+              <h3 class="font-bold text-xl">Math Preparation</h3>
+            </div>
+            <div class="p-6">
+              <p class="mb-4">
+                Comprehensive preparation for all mathematical concepts tested in cadet assessments:
+              </p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Algebra and equations</li>
+                <li>Speed, distance, and time calculations</li>
+                <li>Percentages and ratios</li>
+                <li>Logic-based problems</li>
+                <li>Mental arithmetic techniques</li>
+              </ul>
+              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+                Access Math Resources
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <div class="bg-blue-100 p-4">
+              <h3 class="font-bold text-xl">Physics Preparation</h3>
+            </div>
+            <div class="p-6">
+              <p class="mb-4">Master the physics concepts relevant to aviation and pilot assessments:</p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Forces and motion</li>
+                <li>Energy and power</li>
+                <li>Basic aerodynamics</li>
+                <li>Pressure and atmosphere</li>
+                <li>Practical applications in flight</li>
+              </ul>
+              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+                Access Physics Resources
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <div class="bg-blue-100 p-4">
+              <h3 class="font-bold text-xl">English & Aviation Terminology</h3>
+            </div>
+            <div class="p-6">
+              <p class="mb-4">Improve your English proficiency to ICAO standards:</p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Aviation-specific vocabulary</li>
+                <li>Radio communication phrases</li>
+                <li>Technical reading comprehension</li>
+                <li>Grammar and pronunciation</li>
+                <li>ICAO language proficiency requirements</li>
+              </ul>
+              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+                Access English Resources
+              </button>
+            </div>
+          </div>
+          
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <div class="bg-blue-100 p-4">
+              <h3 class="font-bold text-xl">Interview Q&A</h3>
+            </div>
+            <div class="p-6">
+              <p class="mb-4">Prepare for both HR and technical interview questions:</p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Common HR questions and model answers</li>
+                <li>Technical aviation questions</li>
+                <li>Situational judgment scenarios</li>
+                <li>Interview etiquette and presentation</li>
+                <li>Mock interview practice guides</li>
+              </ul>
+              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+                Access Interview Resources
+              </button>
+            </div>
+          </div>
+          
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <div class="bg-blue-100 p-4">
+              <h3 class="font-bold text-xl">Airline-Specific Assessments</h3>
+            </div>
+            <div class="p-6">
+              <p class="mb-4">Tailored preparation materials for specific airlines:</p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Etihad Airways assessment format</li>
+                <li>Emirates cadet program requirements</li>
+                <li>Fujairah Aviation Academy tests</li>
+                <li>Wizz Air selection process</li>
+                <li>Other Middle Eastern carriers</li>
+              </ul>
+              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+                Access Airline-Specific Resources
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 py-12 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Success Stories</h2>
+        <div class="max-w-4xl mx-auto">
+          <blockquote class="italic text-lg mb-4">
+            "The math and physics resources helped me ace my Emirates assessment. I couldn't have done it without Cadet Pilot Hub!"
+          </blockquote>
+          <p class="font-semibold">— Ahmed K., Emirates Cadet Pilot</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Pilot Products</h1>
+        <p class="text-xl max-w-3xl mx-auto">Premium aviation accessories designed specifically for cadet pilots</p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Coming Soon</h2>
+        <p class="text-xl mb-8">
+          We're developing a range of high-quality products specifically designed for cadet pilots. Join our waitlist to
+          be the first to know when they launch!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-4xl mb-4">✈️</div>
+            <h3 class="text-xl font-bold mb-2">Pilot Wallets</h3>
+            <p>Premium leather wallets with dedicated compartments for licenses, IDs, and flight documents.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-4xl mb-4">📓</div>
+            <h3 class="text-xl font-bold mb-2">Logbooks</h3>
+            <p>Professionally designed logbooks with durable covers and organized layouts for flight hours.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-4xl mb-4">🎒</div>
+            <h3 class="text-xl font-bold mb-2">Flight Bags</h3>
+            <p>Compact, organized bags designed to carry all your essentials for training flights.</p>
+          </div>
+        </div>
+
+        <div class="max-w-md mx-auto">
+          <h3 class="text-2xl font-bold mb-4">Join the Waitlist</h3>
+          <p class="mb-6">
+            Be the first to know when our products launch and receive exclusive early-bird discounts!
+          </p>
+
+          <form class="flex flex-col md:flex-row">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full p-3 rounded-l border border-gray-300 mb-2 md:mb-0"
+              required
+            />
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700">
+              Notify Me
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="bg-gray-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Product FAQs</h2>
+          
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-xl mb-2">When will products be available?</h3>
+              <p>We're aiming to launch our first collection in Q3 2025. Join our waitlist to be notified!</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-xl mb-2">Will you ship internationally?</h3>
+              <p>Yes! We'll ship to all major countries, with a focus on the UAE and Middle East region.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-xl mb-2">Can I request custom products?</h3>
+              <p>We're planning to offer customization options for select products. More details coming soon!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Blog & Free Resources</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Insights, guides, and resources to help you on your journey to becoming a pilot
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-blue-100 p-8 text-center">
+              <span class="text-5xl">✈️</span>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between text-sm text-gray-500 mb-2">
+                <span>April 15, 2025</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="text-xl font-bold mb-2">How to Apply for UAE Cadet Programs</h2>
+              <p class="text-gray-600 mb-4">
+                A step-by-step guide to applying for cadet pilot programs at major UAE airlines.
+              </p>
+              <a href="#" class="text-blue-600 hover:underline">
+                Read more →
+              </a>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-blue-100 p-8 text-center">
+              <span class="text-5xl">🧠</span>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between text-sm text-gray-500 mb-2">
+                <span>April 10, 2025</span>
+                <span>6 min read</span>
+              </div>
+              <h2 class="text-xl font-bold mb-2">Study Hacks That Work</h2>
+              <p class="text-gray-600 mb-4">
+                Effective study techniques specifically tailored for aviation theory and pilot assessments.
+              </p>
+              <a href="#" class="text-blue-600 hover:underline">
+                Read more →
+              </a>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-blue-100 p-8 text-center">
+              <span class="text-5xl">🎤</span>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between text-sm text-gray-500 mb-2">
+                <span>April 5, 2025</span>
+                <span>10 min read</span>
+              </div>
+              <h2 class="text-xl font-bold mb-2">How I Passed My Etihad Assessment</h2>
+              <p class="text-gray-600 mb-4">
+                A personal account of the Etihad Airways cadet pilot assessment process with tips and insights.
+              </p>
+              <a href="#" class="text-blue-600 hover:underline">
+                Read more →
+              </a>
+            </div>
+          </article>
+          
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-blue-100 p-8 text-center">
+              <span class="text-5xl">🏥</span>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between text-sm text-gray-500 mb-2">
+                <span>March 28, 2025</span>
+                <span>7 min read</span>
+              </div>
+              <h2 class="text-xl font-bold mb-2">Understanding Aviation Medical Requirements</h2>
+              <p class="text-gray-600 mb-4">
+                Everything you need to know about Class 1 medical examinations for pilot licenses.
+              </p>
+              <a href="#" class="text-blue-600 hover:underline">
+                Read more →
+              </a>
+            </div>
+          </article>
+          
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-blue-100 p-8 text-center">
+              <span class="text-5xl">🌍</span>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between text-sm text-gray-500 mb-2">
+                <span>March 20, 2025</span>
+                <span>9 min read</span>
+              </div>
+              <h2 class="text-xl font-bold mb-2">The Future of Aviation in the Middle East</h2>
+              <p class="text-gray-600 mb-4">
+                Industry trends and career prospects for pilots in the rapidly growing Middle Eastern aviation sector.
+              </p>
+              <a href="#" class="text-blue-600 hover:underline">
+                Read more →
+              </a>
+            </div>
+          </article>
+          
+          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-blue-100 p-8 text-center">
+              <span class="text-5xl">🎮</span>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between text-sm text-gray-500 mb-2">
+                <span>March 15, 2025</span>
+                <span>8 min read</span>
+              </div>
+              <h2 class="text-xl font-bold mb-2">Simulator Tips for First-Time Cadets</h2>
+              <p class="text-gray-600 mb-4">
+                How to prepare for and excel in your first simulator assessment.
+              </p>
+              <a href="#" class="text-blue-600 hover:underline">
+                Read more →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 py-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-6">Subscribe to Our Newsletter</h2>
+          <p class="mb-6">Get the latest articles, resources, and pilot opportunities delivered to your inbox.</p>
+          <form class="max-w-md mx-auto flex flex-col md:flex-row">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full p-3 rounded-l border border-gray-300 mb-2 md:mb-0"
+              required
+            />
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">1-on-1 Mentorship</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Connect with experienced cadets and pilots who've been through the journey
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto text-center">
+        <div class="bg-yellow-100 p-6 rounded-lg mb-12 inline-block">
+          <h2 class="text-2xl font-bold">Coming Soon!</h2>
+          <p class="text-lg">Our mentorship program is currently in development and will launch soon.</p>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-8">What to Expect</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-bold mb-2">Personalized Guidance</h3>
+            <p>One-on-one sessions tailored to your specific needs, goals, and stage in your pilot journey.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-4xl mb-4">👨‍✈️</div>
+            <h3 class="text-xl font-bold mb-2">Experienced Mentors</h3>
+            <p>Connect with current cadets and professional pilots from major Middle Eastern airlines.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-4xl mb-4">💻</div>
+            <h3 class="text-xl font-bold mb-2">Virtual Sessions</h3>
+            <p>Convenient Zoom sessions that fit your schedule, with options for recorded follow-ups.</p>
+          </div>
+        </div>
+
+        <div class="max-w-md mx-auto">
+          <h3 class="text-2xl font-bold mb-4">Join the Waitlist</h3>
+          <p class="mb-6">Be the first to know when our mentorship program launches!</p>
+
+          <form class="flex flex-col md:flex-row">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full p-3 rounded-l border border-gray-300 mb-2 md:mb-0"
+              required
+            />
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700">
+              Notify Me
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="bg-gray-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Mentorship Topics</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-xl mb-2">Assessment Preparation</h3>
+              <p>Get insider tips on how to prepare for and excel in airline assessments.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-xl mb-2">Interview Coaching</h3>
+              <p>Practice with mock interviews and receive feedback from those who've succeeded.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-xl mb-2">Study Strategies</h3>
+              <p>Learn effective study techniques for aviation theory and technical knowledge.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-xl mb-2">Career Planning</h3>
+              <p>Get guidance on planning your aviation career path and setting realistic goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">About Captain Mousa</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          The story behind Cadet Pilot Hub and our mission to empower aspiring aviators
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-4xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-center">Our Story</h2>
+
+          <div class="mb-8 text-center">
+            <div class="inline-block bg-blue-100 p-8 rounded-full mb-4">
+              <span class="text-6xl">✈️</span>
+            </div>
+          </div>
+
+          <p class="text-lg mb-4">
+            I'm Captain Mousa — an aspiring aviator with a mission to empower cadets across the UAE and beyond. My
+            journey into aviation began with a childhood fascination with aircraft, which eventually led me to pursue a
+            career as a pilot.
+          </p>
+
+          <p class="text-lg mb-4">
+            During my own cadet application process, I discovered how challenging it can be to find reliable information
+            and resources specifically tailored to the Middle Eastern aviation industry. Many aspiring pilots in our
+            region face similar obstacles.
+          </p>
+
+          <p class="text-lg mb-4">
+            That's why I created Cadet Pilot Hub — to provide a comprehensive platform that offers assessment 
+            preparation, guidance, and community support for cadet pilots in the UAE and surrounding regions.
+          </p>
+
+          <p class="text-lg">This isn't just a platform. It's your launchpad to the skies.</p>
+        </div>
+        
+        <div class="grid gri  It's your launchpad to the skies.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+            <p class="mb-4">
+              To empower aspiring pilots in the Middle East with the knowledge, resources, and community 
+              support they need to successfully navigate the cadet pilot application process and launch 
+              their aviation careers.
+            </p>
+            <p>
+              We believe that with the right guidance and preparation, more talented individuals from our 
+              region can achieve their dreams of becoming pilots.
+            </p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-4">Our Values</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <span class="mr-2">✅</span>
+                <span><strong>Accuracy:</strong> We provide reliable, up-to-date information.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2">✅</span>
+                <span><strong>Accessibility:</strong> We make aviation knowledge accessible to all.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2">✅</span>
+                <span><strong>Community:</strong> We foster a supportive environment for aspiring pilots.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2">✅</span>
+                <span><strong>Excellence:</strong> We strive for the highest standards in all our resources.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-gray-100 py-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+          <p class="mb-8 text-lg">
+            Have questions or suggestions? We'd love to hear from you!
+          </p>
+          
+          <div class="bg-white p-6 rounded-lg shadow-md inline-block">
+            <p class="mb-2"><strong>Email:</strong> captain@cadetpilothub.com</p>
+            <p><strong>Instagram:</strong> @cadetpilothub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-12 py-6 text-center text-sm">
+    <p>© 2025 Cadet Pilot Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for mobile menu toggle -->
+  <script>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu.style.display === 'flex') {
+        mobileMenu.style.display = 'none';
+      } else {
+        mobileMenu.style.display = 'flex';
+      }
+    }
+  </script>
+</body>
+</html>
