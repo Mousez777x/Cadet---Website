@@ -25,6 +25,58 @@
         display: block;
       }
     }
+
+    .math-formula {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      padding: 0.5rem;
+      background-color: #f0f9ff;
+      border-radius: 0.25rem;
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
+
+    .example-box {
+      border-left: 4px solid #3b82f6;
+      padding: 1rem;
+      margin: 1rem 0;
+      background-color: #f0f9ff;
+    }
+
+    .practice-question {
+      border: 1px solid #e5e7eb;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      background-color: white;
+    }
+
+    .answer-reveal {
+      color: transparent;
+      background-color: #e5e7eb;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .answer-reveal:hover {
+      color: #1f2937;
+    }
+
+    .vocabulary-term {
+      font-weight: bold;
+      color: #1e40af;
+    }
+
+    .physics-diagram {
+      text-align: center;
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 0.5rem;
+      border: 1px solid #e5e7eb;
+    }
   </style>
 </head>
 <body>
@@ -43,6 +95,10 @@
       <!-- Desktop navigation -->
       <nav class="hidden md:flex space-x-6 desktop-menu">
         <a href="#assessments" class="hover:text-blue-600">Assessments</a>
+        <a href="#math-preparation" class="hover:text-blue-600">Math</a>
+        <a href="#physics-preparation" class="hover:text-blue-600">Physics</a>
+        <a href="#english-terminology" class="hover:text-blue-600">English</a>
+        <a href="#interview-qa" class="hover:text-blue-600">Interview</a>
         <a href="#products" class="hover:text-blue-600">Products</a>
         <a href="#blog" class="hover:text-blue-600">Blog</a>
         <a href="#mentorship" class="hover:text-blue-600">Mentorship</a>
@@ -53,6 +109,10 @@
     <!-- Mobile navigation -->
     <nav id="mobile-menu" class="md:hidden bg-white px-4 py-2 flex-col space-y-4 pb-4 mobile-menu">
       <a href="#assessments" class="hover:text-blue-600">Assessments</a>
+      <a href="#math-preparation" class="hover:text-blue-600">Math</a>
+      <a href="#physics-preparation" class="hover:text-blue-600">Physics</a>
+      <a href="#english-terminology" class="hover:text-blue-600">English</a>
+      <a href="#interview-qa" class="hover:text-blue-600">Interview</a>
       <a href="#products" class="hover:text-blue-600">Products</a>
       <a href="#blog" class="hover:text-blue-600">Blog</a>
       <a href="#mentorship" class="hover:text-blue-600">Mentorship</a>
@@ -151,9 +211,9 @@
                 <li>Logic-based problems</li>
                 <li>Mental arithmetic techniques</li>
               </ul>
-              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+              <a href="#math-preparation" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
                 Access Math Resources
-              </button>
+              </a>
             </div>
           </div>
 
@@ -170,9 +230,9 @@
                 <li>Pressure and atmosphere</li>
                 <li>Practical applications in flight</li>
               </ul>
-              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+              <a href="#physics-preparation" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
                 Access Physics Resources
-              </button>
+              </a>
             </div>
           </div>
 
@@ -189,9 +249,9 @@
                 <li>Grammar and pronunciation</li>
                 <li>ICAO language proficiency requirements</li>
               </ul>
-              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+              <a href="#english-terminology" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
                 Access English Resources
-              </button>
+              </a>
             </div>
           </div>
           
@@ -208,9 +268,9 @@
                 <li>Interview etiquette and presentation</li>
                 <li>Mock interview practice guides</li>
               </ul>
-              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+              <a href="#interview-qa" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
                 Access Interview Resources
-              </button>
+              </a>
             </div>
           </div>
           
@@ -242,6 +302,1238 @@
             "The math and physics resources helped me ace my Emirates assessment. I couldn't have done it without Cadet Pilot Hub!"
           </blockquote>
           <p class="font-semibold">— Ahmed K., Emirates Cadet Pilot</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Math Preparation Section -->
+    <section id="math-preparation" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Math Preparation</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Master the mathematical concepts essential for cadet pilot assessments
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-3xl font-bold mb-6">Introduction to Math for Pilot Assessments</h2>
+          <p class="mb-4">
+            Mathematical aptitude is a critical component of pilot assessments. Airlines test these skills because pilots must perform calculations related to fuel consumption, weight and balance, navigation, and more. The math tested in cadet assessments typically focuses on:
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>Mental arithmetic (without calculators)</li>
+            <li>Problem-solving under time pressure</li>
+            <li>Application of formulas in practical scenarios</li>
+            <li>Logical reasoning and spatial awareness</li>
+          </ul>
+          <p>
+            This section provides comprehensive preparation for all mathematical concepts commonly tested in cadet pilot assessments. We'll cover key topics, provide example problems, and offer practice questions to help you build confidence and speed.
+          </p>
+        </div>
+
+        <!-- Algebra and Equations -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">1. Algebra and Equations</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Linear Equations</h3>
+          <p class="mb-4">
+            Linear equations are frequently used in aviation for calculations involving speed, distance, and time. The standard form is:
+          </p>
+          <div class="math-formula">ax + b = c</div>
+          <p class="mb-4">Where:</p>
+          <ul class="list-disc pl-5 space-y-1 mb-6">
+            <li>a, b, and c are constants</li>
+            <li>x is the variable we're solving for</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft burns 2,500 kg of fuel per hour. If the flight is scheduled for 3.5 hours and the aircraft needs to land with at least 2,000 kg of reserve fuel, what is the minimum amount of fuel needed before takeoff?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Let's set up the equation:</p>
+            <p class="mb-2">Fuel needed = Fuel consumption × Flight time + Reserve fuel</p>
+            <p class="mb-2">Fuel needed = 2,500 kg/hr × 3.5 hr + 2,000 kg</p>
+            <p class="mb-2">Fuel needed = 8,750 kg + 2,000 kg</p>
+            <p class="mb-2">Fuel needed = 10,750 kg</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Quadratic Equations</h3>
+          <p class="mb-4">
+            Quadratic equations appear in problems involving acceleration, deceleration, and curved flight paths. The standard form is:
+          </p>
+          <div class="math-formula">ax² + bx + c = 0</div>
+          <p class="mb-4">
+            These can be solved using the quadratic formula:
+          </p>
+          <div class="math-formula">x = (-b ± √(b² - 4ac)) / 2a</div>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft accelerates at a rate of 2 m/s². If it starts from rest, how long will it take to reach a takeoff speed of 80 m/s?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Using the equation: v = u + at</p>
+            <p class="mb-2">Where v is final velocity, u is initial velocity, a is acceleration, and t is time.</p>
+            <p class="mb-2">80 m/s = 0 m/s + 2 m/s² × t</p>
+            <p class="mb-2">80 = 2t</p>
+            <p class="mb-2">t = 40 seconds</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> An aircraft flies at 450 knots for 2 hours, then increases its speed by 50 knots for the next 1.5 hours. What is the total distance covered?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">1,575 nautical miles</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> If an aircraft descends from 30,000 feet to 10,000 feet at a constant rate of 1,500 feet per minute, how long will the descent take?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">13.33 minutes (or 13 minutes and 20 seconds)</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> An aircraft has a fuel capacity of 5,000 kg. If it burns fuel at a rate of 800 kg per hour during cruise and 1,200 kg per hour during climb and descent, how long can it cruise if climb and descent together take 45 minutes?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">5.375 hours (5 hours and 22.5 minutes)</span></p>
+          </div>
+        </div>
+
+        <!-- Speed, Distance, and Time -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">2. Speed, Distance, and Time Calculations</h2>
+          
+          <p class="mb-4">
+            Speed, distance, and time calculations are fundamental to aviation. Pilots must constantly calculate these values for navigation, fuel planning, and arrival estimates.
+          </p>
+          
+          <h3 class="text-xl font-semibold mb-4">Key Formulas</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Speed = Distance ÷ Time</div>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Distance = Speed × Time</div>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Time = Distance ÷ Speed</div>
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4">Aviation-Specific Units</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Speed:</strong> Knots (nautical miles per hour)</li>
+            <li><strong>Distance:</strong> Nautical miles (NM)</li>
+            <li><strong>Time:</strong> Hours, minutes</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft is flying at a ground speed of 420 knots. How long will it take to cover a distance of 1,050 nautical miles?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Time = Distance ÷ Speed</p>
+            <p class="mb-2">Time = 1,050 NM ÷ 420 knots</p>
+            <p class="mb-2">Time = 2.5 hours (2 hours and 30 minutes)</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Headwind and Tailwind Calculations</h3>
+          <p class="mb-4">
+            Wind significantly affects an aircraft's ground speed. With a headwind, ground speed decreases; with a tailwind, it increases.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Ground Speed = Air Speed - Headwind</div>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Ground Speed = Air Speed + Tailwind</div>
+            </div>
+          </div>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft has a true airspeed of 480 knots. If it encounters a 40-knot headwind, what will be its ground speed? How long will it take to cover 960 nautical miles?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Ground Speed = Air Speed - Headwind</p>
+            <p class="mb-2">Ground Speed = 480 knots - 40 knots = 440 knots</p>
+            <p class="mb-2">Time = Distance ÷ Ground Speed</p>
+            <p class="mb-2">Time = 960 NM ÷ 440 knots = 2.18 hours (2 hours and 11 minutes)</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> An aircraft flies from Dubai to Riyadh, a distance of 540 NM, at a ground speed of 360 knots. It then flies from Riyadh to Jeddah, a distance of 620 NM, at a ground speed of 400 knots. What is the total flight time?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">3.05 hours (3 hours and 3 minutes)</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> An aircraft has a true airspeed of 500 knots. If the flight from Abu Dhabi to Muscat (a distance of 220 NM) takes 30 minutes, what is the wind component (headwind or tailwind)?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">60-knot tailwind</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> An aircraft needs to arrive at its destination in exactly 2 hours. The distance is 900 NM, and there's a 50-knot headwind. What true airspeed must the pilot maintain?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">500 knots</span></p>
+          </div>
+        </div>
+
+        <!-- Percentages and Ratios -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">3. Percentages and Ratios</h2>
+          
+          <p class="mb-4">
+            Percentages and ratios are used in various aviation calculations, including fuel planning, weight and balance, and performance calculations.
+          </p>
+          
+          <h3 class="text-xl font-semibold mb-4">Percentage Calculations</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Percentage = (Part ÷ Whole) × 100%</div>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Part = (Percentage ÷ 100%) × Whole</div>
+            </div>
+          </div>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft has a maximum takeoff weight (MTOW) of 78,000 kg. If the current fuel load is 15,600 kg, what percentage of the MTOW is the fuel?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Percentage = (Part ÷ Whole) × 100%</p>
+            <p class="mb-2">Percentage = (15,600 kg ÷ 78,000 kg) × 100%</p>
+            <p class="mb-2">Percentage = 0.2 × 100% = 20%</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Ratio Applications</h3>
+          <p class="mb-4">
+            Ratios express the relationship between two quantities and are often used in fuel calculations and weight distribution.
+          </p>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">The ratio of passengers to crew on a flight is 25:3. If there are 150 passengers, how many crew members are on board?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Passengers : Crew = 25 : 3</p>
+            <p class="mb-2">If Passengers = 150, then:</p>
+            <p class="mb-2">Crew = (3 ÷ 25) × 150 = 18 crew members</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Fuel Calculations</h3>
+          <p class="mb-4">
+            Fuel calculations often involve percentages, especially when calculating reserves and contingencies.
+          </p>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">A flight requires 12,000 kg of fuel for the planned route. Regulations require an additional 5% for contingency and 30% of the trip fuel for alternate airport diversion. What is the total fuel required?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Contingency fuel = 5% of trip fuel = 0.05 × 12,000 kg = 600 kg</p>
+            <p class="mb-2">Alternate fuel = 30% of trip fuel = 0.3 × 12,000 kg = 3,600 kg</p>
+            <p class="mb-2">Total fuel required = Trip fuel + Contingency fuel + Alternate fuel</p>
+            <p class="mb-2">Total fuel required = 12,000 kg + 600 kg + 3,600 kg = 16,200 kg</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> An aircraft burns 3,200 kg of fuel during a 4-hour flight. If the fuel consumption rate increases by 15% due to headwinds on the return journey, how much fuel will be consumed on the return flight of the same duration?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">3,680 kg</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> The ratio of cargo weight to passenger weight on a flight is 3:5. If the total weight is 24,000 kg, what is the weight of the cargo?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">9,000 kg</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> A pilot calculates that 8,500 kg of fuel is needed for a flight. Company policy requires an additional 10% for contingency, plus 5% of the total (trip + contingency) for taxi. What is the final fuel load?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">9,817.5 kg</span></p>
+          </div>
+        </div>
+
+        <!-- Mental Arithmetic -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">4. Mental Arithmetic Techniques</h2>
+          
+          <p class="mb-4">
+            Pilot assessments often require quick mental calculations without calculators. Here are some techniques to improve your mental math skills:
+          </p>
+          
+          <h3 class="text-xl font-semibold mb-4">Multiplication Shortcuts</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Multiplying by 5:</strong> Multiply by 10, then divide by 2</li>
+            <li><strong>Multiplying by 9:</strong> Multiply by 10, then subtract the original number</li>
+            <li><strong>Multiplying by 11:</strong> For two-digit numbers, add the digits and place between them (e.g., 11 × 25: 2 + 5 = 7, so 275)</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mb-4">Division Techniques</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Dividing by 5:</strong> Multiply by 2, then divide by 10</li>
+            <li><strong>Dividing by 0.5:</strong> Multiply by 2</li>
+            <li><strong>Dividing by 25:</strong> Multiply by 4, then divide by 100</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mb-4">Percentage Calculations</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Finding 10%:</strong> Move the decimal point one place to the left</li>
+            <li><strong>Finding 5%:</strong> Halve the 10% value</li>
+            <li><strong>Finding 1%:</strong> Divide the 10% value by 10</li>
+            <li><strong>Finding 15%:</strong> Add the 10% and 5% values</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">Calculate 15% of 420 mentally.</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">10% of 420 = 42</p>
+            <p class="mb-2">5% of 420 = 21</p>
+            <p class="mb-2">15% of 420 = 42 + 21 = 63</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> Calculate 35% of 240 mentally.</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">84</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> An aircraft is flying at 450 knots. How far will it travel in 40 minutes? (Calculate mentally)</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">300 nautical miles</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> If fuel costs $3.25 per gallon and an aircraft needs 750 gallons, approximately how much will the fuel cost? (Calculate mentally)</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">$2,437.50</span></p>
+          </div>
+        </div>
+
+        <!-- Additional Resources -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-6">Additional Math Resources</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Practice Tests</h3>
+              <p class="mb-4">
+                Test your knowledge with our comprehensive practice tests, designed to simulate the math section of cadet pilot assessments.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Access Practice Tests
+              </button>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Video Tutorials</h3>
+              <p class="mb-4">
+                Watch our step-by-step video tutorials explaining key mathematical concepts and problem-solving techniques.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Watch Video Tutorials
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Physics Preparation Section -->
+    <section id="physics-preparation" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Physics Preparation</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Understanding the physics principles that make flight possible
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-3xl font-bold mb-6">Introduction to Aviation Physics</h2>
+          <p class="mb-4">
+            Physics is fundamental to understanding how aircraft fly and operate. Cadet pilot assessments test your knowledge of basic physics principles and their application to aviation. This section covers the key physics concepts you need to master for your assessments.
+          </p>
+          <p>
+            We'll explore forces and motion, energy and power, basic aerodynamics, pressure and atmosphere, and practical applications in flight. Each topic includes explanations, formulas, examples, and practice questions to help you prepare thoroughly.
+          </p>
+        </div>
+
+        <!-- Forces and Motion -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">1. Forces and Motion</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Newton's Laws of Motion</h3>
+          <div class="mb-6">
+            <p class="font-semibold">First Law (Law of Inertia):</p>
+            <p class="mb-4">An object at rest stays at rest, and an object in motion stays in motion with the same speed and direction, unless acted upon by an external force.</p>
+            
+            <p class="font-semibold">Second Law:</p>
+            <p class="mb-4">The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.</p>
+            <div class="math-formula">F = ma</div>
+            <p class="mb-4">Where F is force (N), m is mass (kg), and a is acceleration (m/s²).</p>
+            
+            <p class="font-semibold">Third Law:</p>
+            <p class="mb-4">For every action, there is an equal and opposite reaction.</p>
+          </div>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft with a mass of 50,000 kg experiences a net thrust of 200,000 N. What is its acceleration?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Using F = ma</p>
+            <p class="mb-2">a = F/m = 200,000 N / 50,000 kg = 4 m/s²</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">The Four Forces of Flight</h3>
+          
+          <div class="physics-diagram">
+            <p class="text-center mb-4">The four forces acting on an aircraft in flight:</p>
+            <div class="grid grid-cols-2 gap-4 max-w-md mx-auto">
+              <div class="text-center">
+                <p class="font-bold">LIFT</p>
+                <p class="text-sm">↑</p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold">WEIGHT</p>
+                <p class="text-sm">↓</p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold">THRUST</p>
+                <p class="text-sm">→</p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold">DRAG</p>
+                <p class="text-sm">←</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <p class="mb-4"><strong>Lift:</strong> The upward force created by the wings that opposes weight.</p>
+            <p class="mb-4"><strong>Weight:</strong> The force of gravity pulling the aircraft toward Earth.</p>
+            <p class="mb-4"><strong>Thrust:</strong> The forward force produced by the engines that opposes drag.</p>
+            <p class="mb-4"><strong>Drag:</strong> The resistance of the air to the aircraft's movement.</p>
+          </div>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft weighing 60,000 N is in level flight. What is the lift force acting on the aircraft?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">In level flight, lift equals weight.</p>
+            <p class="mb-2">Therefore, lift = 60,000 N</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> An aircraft with a mass of 75,000 kg is accelerating at 2 m/s². What is the net force acting on the aircraft?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">150,000 N</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> If an aircraft is cruising at a constant speed and altitude, what can you say about the four forces acting on it?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Lift equals weight, and thrust equals drag</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> An aircraft weighs 80,000 N and produces 85,000 N of lift. What will happen to the aircraft?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">The aircraft will climb (accelerate upward)</span></p>
+          </div>
+        </div>
+
+        <!-- Basic Aerodynamics -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">2. Basic Aerodynamics</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Bernoulli's Principle</h3>
+          <p class="mb-4">
+            Bernoulli's principle states that as the speed of a fluid increases, its pressure decreases. This principle explains how wings generate lift.
+          </p>
+          <div class="physics-diagram">
+            <p class="text-center mb-2">Airflow around a wing:</p>
+            <div class="bg-blue-50 p-4 rounded-lg max-w-md mx-auto">
+              <p class="text-center">Faster airflow over the top surface → Lower pressure</p>
+              <p class="text-center mt-2">Slower airflow under the bottom surface → Higher pressure</p>
+              <p class="text-center mt-2">Pressure difference creates lift</p>
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Angle of Attack</h3>
+          <p class="mb-4">
+            The angle of attack (AOA) is the angle between the wing's chord line and the relative wind. As AOA increases, lift increases up to a critical angle, after which the wing stalls.
+          </p>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">If an aircraft increases its angle of attack from 2° to 8°, what happens to the lift?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">As the angle of attack increases (within the normal range), lift increases. Therefore, the lift will increase when the AOA changes from 2° to 8°.</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Lift Equation</h3>
+          <div class="math-formula">Lift = CL × ½ × ρ × V² × S</div>
+          <p class="mb-4">Where:</p>
+          <ul class="list-disc pl-5 space-y-1 mb-6">
+            <li>CL is the lift coefficient</li>
+            <li>ρ (rho) is air density</li>
+            <li>V is airspeed</li>
+            <li>S is wing area</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">If an aircraft doubles its airspeed while all other factors remain constant, what happens to the lift?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Since lift is proportional to V², doubling the airspeed will quadruple the lift.</p>
+            <p class="mb-2">New lift = Original lift × 2² = Original lift × 4</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> According to Bernoulli's principle, what happens to the pressure of air as its velocity increases?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">The pressure decreases</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> If an aircraft's airspeed decreases by 20% while all other factors remain constant, what is the percentage change in lift?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">36% decrease (0.8² = 0.64, so lift is 64% of original, a 36% decrease)</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> What happens when an aircraft exceeds its critical angle of attack?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">The wing stalls, resulting in a sudden loss of lift</span></p>
+          </div>
+        </div>
+
+        <!-- Pressure and Atmosphere -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">3. Pressure and Atmosphere</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Atmospheric Pressure</h3>
+          <p class="mb-4">
+            Atmospheric pressure decreases with altitude. This affects aircraft performance, engine power, and altimeter readings.
+          </p>
+          <div class="physics-diagram">
+            <p class="text-center mb-2">Standard atmospheric pressure at sea level:</p>
+            <p class="text-center font-bold">1013.25 hPa (hectopascals) or 29.92 inHg (inches of mercury)</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Pressure Altitude</h3>
+          <p class="mb-4">
+            Pressure altitude is the altitude shown on an altimeter when set to standard pressure (1013.25 hPa). It's used for flight levels above the transition altitude.
+          </p>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Density Altitude</h3>
+          <p class="mb-4">
+            Density altitude is pressure altitude corrected for non-standard temperature. It affects aircraft performance, particularly during takeoff and landing.
+          </p>
+          <p class="mb-4">
+            Factors that increase density altitude (reducing air density and aircraft performance):
+          </p>
+          <ul class="list-disc pl-5 space-y-1 mb-6">
+            <li>Higher temperature</li>
+            <li>Higher altitude</li>
+            <li>Higher humidity</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft is taking off from an airport with an elevation of 5,000 feet on a hot day (35°C). How will this affect the takeoff performance compared to standard conditions?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">The high temperature and elevation result in a high density altitude. This means:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Reduced engine power</li>
+              <li>Reduced lift</li>
+              <li>Longer takeoff roll</li>
+              <li>Reduced climb performance</li>
+            </ul>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> What happens to atmospheric pressure as an aircraft climbs?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">It decreases</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> Which of these conditions would result in the highest density altitude?</p>
+            <p class="mb-2">a) High elevation, high temperature, high humidity</p>
+            <p class="mb-2">b) Low elevation, high temperature, low humidity</p>
+            <p class="mb-2">c) High elevation, low temperature, high humidity</p>
+            <p class="mb-2">d) Low elevation, low temperature, low humidity</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">a) High elevation, high temperature, high humidity</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> Why is an aircraft's takeoff performance reduced at high density altitude?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Lower air density results in reduced engine power and reduced lift</span></p>
+          </div>
+        </div>
+
+        <!-- Energy and Power -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">4. Energy and Power</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Kinetic and Potential Energy</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Kinetic Energy (KE):</p>
+              <div class="math-formula">KE = ½ × m × v²</div>
+              <p class="mt-2">Energy due to motion</p>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Potential Energy (PE):</p>
+              <div class="math-formula">PE = m × g × h</div>
+              <p class="mt-2">Energy due to position or height</p>
+            </div>
+          </div>
+          <p class="mb-4">Where:</p>
+          <ul class="list-disc pl-5 space-y-1 mb-6">
+            <li>m is mass (kg)</li>
+            <li>v is velocity (m/s)</li>
+            <li>g is gravitational acceleration (9.8 m/s²)</li>
+            <li>h is height (m)</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft with a mass of 60,000 kg is cruising at 250 m/s at an altitude of 10,000 m. Calculate its kinetic and potential energy.</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Kinetic Energy = ½ × m × v² = ½ × 60,000 kg × (250 m/s)² = ½ × 60,000 × 62,500 = 1,875,000,000 J</p>
+            <p class="mb-2">Potential Energy = m × g × h = 60,000 kg × 9.8 m/s² × 10,000 m = 5,880,000,000 J</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Power</h3>
+          <p class="mb-4">
+            Power is the rate at which work is done or energy is transferred.
+          </p>
+          <div class="math-formula">Power = Work ÷ Time</div>
+          <div class="math-formula">Power = Force × Velocity</div>
+          <p class="mb-4">Units: Watts (W) or Joules per second (J/s)</p>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft engine produces a thrust of 100,000 N while the aircraft is moving at 200 m/s. What is the power output of the engine?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Power = Force × Velocity = 100,000 N × 200 m/s = 20,000,000 W = 20 MW</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> If an aircraft's speed doubles, what happens to its kinetic energy?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">It increases by a factor of 4 (quadruples)</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> An aircraft with a mass of 50,000 kg climbs from 5,000 m to 9,000 m. What is the increase in its potential energy?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">1,960,000,000 J (or 1.96 GJ)</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> An aircraft engine produces 25 MW of power while generating 125,000 N of thrust. What is the aircraft's velocity?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">200 m/s</span></p>
+          </div>
+        </div>
+
+        <!-- Additional Resources -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-6">Additional Physics Resources</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Interactive Simulations</h3>
+              <p class="mb-4">
+                Explore interactive physics simulations that demonstrate key aviation concepts in action.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Access Simulations
+              </button>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Physics Formula Sheet</h3>
+              <p class="mb-4">
+                Download our comprehensive aviation physics formula sheet for quick reference during your studies.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Download Formula Sheet
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- English & Aviation Terminology Section -->
+    <section id="english-terminology" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">English & Aviation Terminology</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Master the language of aviation and ICAO English requirements
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-3xl font-bold mb-6">Introduction to Aviation English</h2>
+          <p class="mb-4">
+            English is the international language of aviation. All pilots operating internationally must demonstrate proficiency in aviation English according to the International Civil Aviation Organization (ICAO) standards. This section will help you prepare for the English language components of cadet pilot assessments.
+          </p>
+          <p>
+            We'll cover aviation-specific vocabulary, radio communication phrases, technical reading comprehension, grammar and pronunciation, and ICAO language proficiency requirements. Each topic includes explanations, examples, and practice exercises.
+          </p>
+        </div>
+
+        <!-- Aviation Vocabulary -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">1. Aviation-Specific Vocabulary</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Aircraft Components</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+              <p class="mb-2"><span class="vocabulary-term">Fuselage:</span> The main body of the aircraft.</p>
+              <p class="mb-2"><span class="vocabulary-term">Empennage:</span> The tail section of an aircraft.</p>
+              <p class="mb-2"><span class="vocabulary-term">Aileron:</span> Control surface on the wing that controls roll.</p>
+                Control surface on the wing that controls roll.</p>
+              <p class="mb-2"><span class="vocabulary-term">Elevator:</span> Control surface on the horizontal stabilizer that controls pitch.</p>
+              <p class="mb-2"><span class="vocabulary-term">Rudder:</span> Control surface on the vertical stabilizer that controls yaw.</p>
+            </div>
+            <div>
+              <p class="mb-2"><span class="vocabulary-term">Flaps:</span> Movable surfaces on the wings that increase lift at low speeds.</p>
+              <p class="mb-2"><span class="vocabulary-term">Spoilers:</span> Surfaces that reduce lift and increase drag.</p>
+              <p class="mb-2"><span class="vocabulary-term">Landing gear:</span> The wheels and supporting structure (also called undercarriage).</p>
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Navigation Terms</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+              <p class="mb-2"><span class="vocabulary-term">Heading:</span> The direction the aircraft is pointing.</p>
+              <p class="mb-2"><span class="vocabulary-term">Track:</span> The actual path of the aircraft over the ground.</p>
+              <p class="mb-2"><span class="vocabulary-term">Waypoint:</span> A specified geographical location used for navigation.</p>
+            </div>
+            <div>
+              <p class="mb-2"><span class="vocabulary-term">VOR:</span> VHF Omnidirectional Range, a type of radio navigation system.</p>
+              <p class="mb-2"><span class="vocabulary-term">ILS:</span> Instrument Landing System, a precision approach system.</p>
+              <p class="mb-2"><span class="vocabulary-term">Flight level:</span> Altitude expressed in hundreds of feet, e.g., FL350 = 35,000 feet.</p>
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Weather Terminology</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+              <p class="mb-2"><span class="vocabulary-term">METAR:</span> Aviation routine weather report.</p>
+              <p class="mb-2"><span class="vocabulary-term">TAF:</span> Terminal Aerodrome Forecast.</p>
+              <p class="mb-2"><span class="vocabulary-term">Ceiling:</span> Height of the lowest layer of clouds.</p>
+            </div>
+            <div>
+              <p class="mb-2"><span class="vocabulary-term">Visibility:</span> The distance at which objects can be clearly seen.</p>
+              <p class="mb-2"><span class="vocabulary-term">Crosswind:</span> Wind component perpendicular to the runway.</p>
+              <p class="mb-2"><span class="vocabulary-term">Wind shear:</span> Sudden change in wind speed or direction.</p>
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Exercise</h3>
+          <p class="mb-4">Match the aviation terms with their correct definitions:</p>
+          
+          <div class="practice-question">
+            <p class="mb-2">1. Altimeter</p>
+            <p class="mb-2">2. Transponder</p>
+            <p class="mb-2">3. Pitot tube</p>
+            <p class="mb-2">4. Stall</p>
+            <p class="mb-2">5. Trim</p>
+            <p class="mb-4">Options:</p>
+            <p class="mb-2">a) Device that measures airspeed</p>
+            <p class="mb-2">b) Loss of lift due to excessive angle of attack</p>
+            <p class="mb-2">c) Instrument that measures altitude</p>
+            <p class="mb-2">d) Adjustment to control surfaces to maintain flight attitude</p>
+            <p class="mb-2">e) Device that transmits aircraft identification and altitude to ATC</p>
+            <p class="mt-4"><strong>Answers:</strong> <span class="answer-reveal">1-c, 2-e, 3-a, 4-b, 5-d</span></p>
+          </div>
+        </div>
+
+        <!-- Radio Communication -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">2. Radio Communication Phrases</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Standard Phraseology</h3>
+          <p class="mb-4">
+            Standard phraseology is essential for clear and unambiguous communication between pilots and air traffic controllers. Here are some common phrases:
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2">Initial Contact:</p>
+              <p>"[Station] [Aircraft callsign] [Current position/altitude] [Request]"</p>
+              <p class="mt-2 italic text-sm">Example: "Dubai Tower, Emirates 503, holding point runway 30L, ready for departure."</p>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2">Readback:</p>
+              <p>Repeat critical instructions to confirm understanding.</p>
+              <p class="mt-2 italic text-sm">Example: "Cleared to land runway 12R, Emirates 504."</p>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2">Position Reporting:</p>
+              <p>"[Aircraft callsign] [Position] [Altitude] [Time] [Next position] [ETA next position]"</p>
+              <p class="mt-2 italic text-sm">Example: "Etihad 271, DESDI, FL350, 1415, EMERU, 1442."</p>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="font-semibold mb-2">Emergency Communications:</p>
+              <p>"MAYDAY, MAYDAY, MAYDAY" (for life-threatening emergencies)</p>
+              <p>"PAN-PAN, PAN-PAN, PAN-PAN" (for urgent situations)</p>
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">The Phonetic Alphabet</h3>
+          <p class="mb-4">
+            The NATO phonetic alphabet is used in aviation to ensure clear communication of letters and numbers:
+          </p>
+          
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
+            <p>A - Alpha</p>
+            <p>B - Bravo</p>
+            <p>C - Charlie</p>
+            <p>D - Delta</p>
+            <p>E - Echo</p>
+            <p>F - Foxtrot</p>
+            <p>G - Golf</p>
+            <p>H - Hotel</p>
+            <p>I - India</p>
+            <p>J - Juliet</p>
+            <p>K - Kilo</p>
+            <p>L - Lima</p>
+            <p>M - Mike</p>
+            <p>N - November</p>
+            <p>O - Oscar</p>
+            <p>P - Papa</p>
+            <p>Q - Quebec</p>
+            <p>R - Romeo</p>
+            <p>S - Sierra</p>
+            <p>T - Tango</p>
+            <p>U - Uniform</p>
+            <p>V - Victor</p>
+            <p>W - Whiskey</p>
+            <p>X - X-ray</p>
+            <p>Y - Yankee</p>
+            <p>Z - Zulu</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Numbers Pronunciation</h3>
+          <p class="mb-4">
+            Numbers are pronounced differently in aviation to avoid confusion:
+          </p>
+          
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-2 mb-6">
+            <p>0 - Zero</p>
+            <p>1 - One</p>
+            <p>2 - Two</p>
+            <p>3 - Three</p>
+            <p>4 - Four</p>
+            <p>5 - Five</p>
+            <p>6 - Six</p>
+            <p>7 - Seven</p>
+            <p>8 - Eight</p>
+            <p>9 - Niner</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Exercise</h3>
+          <p class="mb-4">Convert the following into proper aviation radio communication:</p>
+          
+          <div class="practice-question">
+            <p class="mb-2">1. Flight EK123 requesting permission to climb to 35,000 feet.</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">"Emirates One Two Three requesting climb to flight level three five zero."</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2">2. ATC instructing flight QR456 to turn right to heading 275 degrees.</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">"Qatar Four Five Six, turn right heading two seven five."</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2">3. Spell "DUBAI" using the phonetic alphabet.</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Delta Uniform Bravo Alpha India</span></p>
+          </div>
+        </div>
+
+        <!-- Technical Reading Comprehension -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">3. Technical Reading Comprehension</h2>
+          
+          <p class="mb-4">
+            Pilots must be able to read and understand technical documents such as aircraft manuals, NOTAMs (Notices to Airmen), and weather reports. Here's an example of a technical passage followed by comprehension questions:
+          </p>
+          
+          <div class="bg-blue-50 p-6 rounded-lg mb-6">
+            <h3 class="font-semibold mb-2">Sample METAR:</h3>
+            <p class="font-mono">OMDB 151530Z 34015G25KT 310V020 6000 NSC 39/12 Q1008 NOSIG</p>
+            
+            <h4 class="font-semibold mt-4 mb-2">Decoded:</h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>OMDB: Dubai International Airport</li>
+              <li>151530Z: 15th day of the month at 15:30 UTC</li>
+              <li>34015G25KT: Wind from 340° at 15 knots, gusting to 25 knots</li>
+              <li>310V020: Wind direction varying between 310° and 020°</li>
+              <li>6000: Visibility 6000 meters</li>
+              <li>NSC: No significant clouds</li>
+              <li>39/12: Temperature 39°C, dew point 12°C</li>
+              <li>Q1008: QNH 1008 hPa</li>
+              <li>NOSIG: No significant change expected</li>
+            </ul>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4">Comprehension Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2">1. What is the wind direction and speed at Dubai International Airport?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">From 340° at 15 knots, gusting to 25 knots, varying between 310° and 020°</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2">2. What is the temperature and dew point?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Temperature 39°C, dew point 12°C</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2">3. What does "NOSIG" indicate in this METAR?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">No significant change expected in the weather conditions</span></p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Sample NOTAM</h3>
+          <div class="bg-blue-50 p-6 rounded-lg mb-6">
+            <p class="font-mono">A0125/23 NOTAMN</p>
+            <p class="font-mono">Q) OMAE/QMRLC/IV/NBO/A/000/999/2518N05518E005</p>
+            <p class="font-mono">A) OMDB B) 2305150600 C) 2305171800</p>
+            <p class="font-mono">E) RWY 12L/30R CLSD DUE TO MAINTENANCE</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4">Comprehension Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2">1. Which runway is closed at Dubai International Airport?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Runway 12L/30R</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2">2. What is the reason for the closure?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Maintenance</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2">3. What is the time period of the closure? (in UTC)</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">From May 15, 2023, at 06:00 UTC to May 17, 2023, at 18:00 UTC</span></p>
+          </div>
+        </div>
+
+        <!-- ICAO Language Proficiency -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">4. ICAO Language Proficiency Requirements</h2>
+          
+          <p class="mb-4">
+            The International Civil Aviation Organization (ICAO) has established language proficiency requirements for pilots operating internationally. Pilots must demonstrate proficiency in the following areas:
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Pronunciation:</p>
+              <p>Clear pronunciation of words and phrases that is understandable to the aviation community.</p>
+            </div>
+            
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Structure:</p>
+              <p>Appropriate grammatical structures and sentence patterns for the communicative task.</p>
+            </div>
+            
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Vocabulary:</p>
+              <p>Sufficient vocabulary range to communicate effectively in aviation contexts.</p>
+            </div>
+            
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Fluency:</p>
+              <p>Ability to speak at an appropriate pace with minimal hesitation.</p>
+            </div>
+            
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Comprehension:</p>
+              <p>Ability to understand standard radiotelephony and plain language in work-related contexts.</p>
+            </div>
+            
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <p class="font-semibold mb-2">Interactions:</p>
+              <p>Ability to respond appropriately and effectively in aviation communications.</p>
+            </div>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4">ICAO Language Proficiency Scale</h3>
+          <p class="mb-4">
+            ICAO rates language proficiency on a scale from 1 to 6:
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Level 1:</strong> Pre-elementary</li>
+            <li><strong>Level 2:</strong> Elementary</li>
+            <li><strong>Level 3:</strong> Pre-operational</li>
+            <li><strong>Level 4:</strong> Operational (minimum required for licensing)</li>
+            <li><strong>Level 5:</strong> Extended</li>
+            <li><strong>Level 6:</strong> Expert</li>
+          </ul>
+          <p class="mb-4">
+            Pilots must achieve at least Level 4 (Operational) proficiency to obtain and maintain their licenses for international operations.
+          </p>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Tips for ICAO English Assessment</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>Practice standard phraseology until it becomes second nature</li>
+            <li>Improve your ability to handle non-routine situations using plain English</li>
+            <li>Work on clear pronunciation, especially of numbers and the phonetic alphabet</li>
+            <li>Practice active listening to improve comprehension</li>
+            <li>Expand your aviation vocabulary</li>
+            <li>Practice speaking at an appropriate pace, neither too fast nor too slow</li>
+          </ul>
+        </div>
+
+        <!-- Additional Resources -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-6">Additional English & Aviation Terminology Resources</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Aviation English Practice Tests</h3>
+              <p class="mb-4">
+                Test your aviation English proficiency with our comprehensive practice tests designed to simulate ICAO language assessments.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Access Practice Tests
+              </button>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Radio Communication Simulator</h3>
+              <p class="mb-4">
+                Practice realistic ATC communications with our interactive radio communication simulator.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Try Communication Simulator
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interview Q&A Section -->
+    <section id="interview-qa" class="pt-16">
+      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Interview Q&A Preparation</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Prepare for HR and technical interviews with comprehensive question guides
+        </p>
+      </div>
+
+      <div class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-3xl font-bold mb-6">Introduction to Cadet Pilot Interviews</h2>
+          <p class="mb-4">
+            The interview stage is a critical component of the cadet pilot selection process. Airlines use interviews to assess not only your technical knowledge but also your personality, communication skills, and suitability for a career as a pilot.
+          </p>
+          <p>
+            This section provides comprehensive preparation for both HR (human resources) and technical interviews. We'll cover common questions, suggested answers, interview etiquette, and strategies to help you make a positive impression.
+          </p>
+        </div>
+
+        <!-- HR Interview Questions -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">1. HR Interview Questions</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Personal Background and Motivation</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Tell us about yourself."</p>
+            <p class="mb-2"><strong>Strategy:</strong> Focus on relevant aspects of your background, education, and experiences that relate to aviation. Keep it concise (1-2 minutes).</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "I'm a 22-year-old graduate with a degree in Aerospace Engineering from [University]. My passion for aviation began at age 10 when I took my first flight. Since then, I've pursued this interest through my education and by obtaining my private pilot's license with 75 flight hours. I'm particularly drawn to [Airline] because of its commitment to safety and innovation in the industry. I believe my technical background, attention to detail, and passion for flying make me well-suited for a career as a pilot."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Why do you want to be a pilot?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Show genuine passion and realistic understanding of the profession. Avoid clichés like "I've always wanted to fly" without substantiating.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "I'm drawn to the unique combination of technical skill, decision-making, and responsibility that comes with being a pilot. I find the process of safely navigating an aircraft through changing conditions intellectually stimulating. Beyond the technical aspects, I value the opportunity to connect people across the world and contribute to global mobility. I understand the profession involves challenges like irregular schedules and high responsibility, but these are aspects I'm prepared for and find meaningful."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Why have you chosen our airline?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Demonstrate that you've researched the airline and have specific reasons for applying.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "I've chosen [Airline] for several specific reasons. First, your fleet modernization program with the introduction of [specific aircraft] shows a commitment to efficiency and environmental responsibility, which aligns with my values. Second, your expansion into [specific markets] presents exciting opportunities for growth. Third, I've spoken with several pilots from your airline who consistently praise the professional culture and training standards. Finally, your cadet program's structured approach to developing pilots from the ground up is exactly the kind of comprehensive training I'm seeking."</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Behavioral Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Describe a situation where you had to make a difficult decision under pressure."</p>
+            <p class="mb-2"><strong>Strategy:</strong> Use the STAR method (Situation, Task, Action, Result) to structure your answer.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "During my final year project at university, we encountered a critical component failure two days before our presentation deadline. As team leader, I had to decide whether to attempt a quick fix or redesign a portion of the project. After assessing the risks, I decided to split the team: half would work on a redesign while half attempted the repair. I stayed in communication with both groups, providing resources and making quick decisions when needed. Ultimately, the repair wasn't viable, but because we had started the redesign early, we completed a modified version in time. We received high marks for both our technical solution and crisis management. This taught me the importance of having contingency plans and making timely decisions under pressure."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Tell us about a time when you had to work with a difficult team member."</p>
+            <p class="mb-2"><strong>Strategy:</strong> Focus on how you handled the situation professionally, not on criticizing the other person.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "During a group project, I worked with a team member who consistently missed deadlines and communication. Rather than escalating the issue immediately, I requested a private conversation to understand if there were underlying issues. I learned they were dealing with family problems that were affecting their work. Together, we restructured their tasks to more manageable components with clear milestones. I also offered additional support for their sections. This approach helped them stay engaged while ensuring the project remained on track. The experience reinforced my belief in the importance of clear communication and empathy in resolving team conflicts, which I believe is essential in a cockpit environment where effective crew resource management is critical."</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Scenario-Based Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "How would you handle a conflict with a fellow crew member during a flight?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Emphasize safety, professionalism, and appropriate conflict resolution.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "Safety would be my primary concern. During the flight, I would focus on maintaining professional communication and following standard operating procedures, setting aside personal disagreements. I would use CRM (Crew Resource Management) principles to ensure effective teamwork despite any tension. After the flight, I would seek a private conversation with the crew member to address the issue directly but respectfully. If we couldn't resolve it ourselves, I would follow company protocols for conflict resolution, which might involve speaking with a supervisor. Throughout the process, I would maintain confidentiality and professionalism, ensuring that passenger safety and the airline's reputation were never compromised."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "How do you handle stress and maintain focus during challenging situations?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Provide specific techniques you use and examples of their effectiveness.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "I manage stress through several proven techniques. First, I practice thorough preparation, which builds confidence and reduces anxiety in challenging situations. Second, I use structured problem-solving approaches, breaking complex issues into manageable steps. During high-pressure moments, I focus on controlled breathing to maintain physiological calm. I've applied these techniques during my pilot training, particularly during emergency procedure simulations. For example, when practicing engine failure scenarios, I would systematically work through the checklist while maintaining situational awareness. I also believe in the importance of maintaining physical health through regular exercise and adequate rest, which builds overall resilience to stress."</p>
+          </div>
+        </div>
+
+        <!-- Technical Interview Questions -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">2. Technical Interview Questions</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Basic Aerodynamics</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Explain how an aircraft generates lift."</p>
+            <p class="mb-2"><strong>Strategy:</strong> Provide a clear, scientifically accurate explanation without oversimplification.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "Lift is generated primarily through the shape of the wing and its angle of attack. The curved upper surface and flatter lower surface of the airfoil create different air pressure zones. According to Bernoulli's principle, the faster-moving air over the top surface creates lower pressure, while the slower-moving air below creates higher pressure. This pressure differential generates an upward force called lift. Additionally, Newton's Third Law contributes to lift as the wing deflects air downward, creating an equal and opposite reaction force upward. The amount of lift depends on several factors including airspeed, air density, wing area, and angle of attack. This is why aircraft require higher speeds for takeoff at higher altitudes where the air is less dense."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "What happens when an aircraft stalls, and how would you recover from a stall?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Demonstrate understanding of both the aerodynamic principles and practical recovery techniques.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "A stall occurs when the wing exceeds its critical angle of attack, causing airflow separation over the upper surface of the wing and a sudden loss of lift. This can happen at any airspeed or attitude. Signs of an approaching stall include buffeting, reduced control effectiveness, and activation of stall warning systems. To recover from a stall, the primary action is to reduce the angle of attack by lowering the nose. This is done by applying forward pressure on the control column or stick. Simultaneously, power should be applied to minimize altitude loss. It's important to maintain coordinated flight with rudder to prevent a spin, and to avoid excessive back pressure during recovery which could cause a secondary stall. Once flying speed is regained and the stall is fully recovered, the aircraft can be returned to level flight while being careful not to exceed structural limitations."</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Navigation and Flight Planning</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Explain the difference between true heading, magnetic heading, and compass heading."</p>
+            <p class="mb-2"><strong>Strategy:</strong> Provide clear definitions and explain the relationships between these concepts.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "True heading is the angle measured clockwise from true north to the aircraft's longitudinal axis. Magnetic heading is the angle measured clockwise from magnetic north to the aircraft's longitudinal axis. The difference between true and magnetic heading is magnetic variation, which varies by geographic location. Compass heading is what's actually displayed on the aircraft's magnetic compass. It differs from magnetic heading due to compass deviation, which is caused by magnetic interference from the aircraft itself. To convert from true heading to compass heading, we apply variation and deviation: True Heading → apply variation → Magnetic Heading → apply deviation → Compass Heading. Pilots need to understand these differences for accurate navigation, especially when using different navigation systems or when flying in areas with significant magnetic variation."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "How do you calculate your fuel requirements for a flight?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Demonstrate knowledge of regulatory requirements and practical considerations.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "Calculating fuel requirements involves several components according to regulations. First, trip fuel is the fuel needed for the entire flight from takeoff to landing, including climb, cruise, and descent. Second, contingency fuel, typically 5% of trip fuel, accounts for unexpected deviations from the flight plan. Third, alternate fuel covers the diversion from the destination to the alternate airport. Fourth, final reserve fuel, usually 30 minutes of flying time at holding speed, is a safety margin. Additional considerations include taxi fuel for ground operations, and extra fuel at the captain's discretion based on factors like expected weather conditions or potential ATC delays. The total fuel required is the sum of all these components. Modern flight planning software helps calculate these values precisely based on aircraft performance, route, altitude, and weather forecasts."</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Aircraft Systems</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "Explain how a jet engine works."</p>
+            <p class="mb-2"><strong>Strategy:</strong> Provide a clear, sequential explanation of the process.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "A jet engine, or gas turbine engine, operates on Newton's Third Law of Motion. The process begins with air intake through the fan at the front of the engine. This air is then compressed by the compressor stages, which consist of rotating and stationary blades that progressively increase air pressure. In the combustion chamber, fuel is mixed with the compressed air and ignited, creating a high-temperature, high-pressure gas flow. This hot gas expands through the turbine section, causing the turbine blades to rotate. The turbine is connected by a shaft to the compressor and fan, powering them. Finally, the high-velocity exhaust gas exits through the nozzle, creating thrust. Modern turbofan engines also have a bypass ratio, where some of the air bypasses the core of the engine, providing additional thrust and improved fuel efficiency."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "What are the primary flight controls and how do they affect aircraft movement?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Clearly explain each control surface and its effect on the aircraft's axes of movement.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "The primary flight controls are the ailerons, elevator, and rudder. Ailerons are located on the trailing edge of the wings and control roll around the longitudinal axis. When the pilot moves the control wheel or stick left, the left aileron goes up and the right aileron goes down, creating differential lift that rolls the aircraft left. The elevator is on the horizontal stabilizer and controls pitch around the lateral axis. Pulling back on the control column raises the elevator, decreasing tail downforce and causing the nose to pitch up. The rudder is on the vertical stabilizer and controls yaw around the vertical axis. Pressing the left rudder pedal moves the rudder left, creating a force that yaws the aircraft's nose to the left. These controls are often used in coordination; for example, ailerons and rudder are used together in turns to maintain coordinated flight and prevent adverse yaw."</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Weather and Meteorology</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "What are the different types of clouds and what weather can they indicate?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Categorize clouds by altitude and formation, and explain their significance to aviation.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "Clouds are categorized by altitude and appearance. High-level clouds (above 20,000 feet) include cirrus, cirrostratus, and cirrocumulus. These thin, wispy clouds often indicate approaching weather systems. Mid-level clouds (6,500-20,000 feet) include altocumulus and altostratus. Altostratus often precedes precipitation. Low-level clouds (below 6,500 feet) include stratus, stratocumulus, and nimbostratus. Stratus clouds can reduce visibility significantly, while nimbostratus brings continuous precipitation. Vertical development clouds, like cumulus and cumulonimbus, can span multiple altitudes. Cumulonimbus clouds (thunderstorms) are particularly hazardous to aviation, containing severe turbulence, icing, lightning, and potentially hail. For pilots, recognizing cloud types is crucial for anticipating weather conditions and making informed decisions about route planning and potential hazards."</p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question:</strong> "What is wind shear and why is it dangerous for aircraft?"</p>
+            <p class="mb-2"><strong>Strategy:</strong> Define the phenomenon clearly and explain its specific dangers to aircraft operations.</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "Wind shear is a sudden change in wind speed and/or direction over a relatively short distance. It can occur horizontally or vertically and is particularly dangerous during takeoff and landing when aircraft are at low altitudes with limited time to recover. The primary danger comes from rapid changes in airspeed. For example, a sudden headwind followed by a tailwind can cause a rapid decrease in airspeed, potentially leading to a stall if not corrected promptly. Microbursts, a severe form of wind shear associated with thunderstorms, are especially hazardous as they can produce both strong downdrafts and outflow winds. Modern aircraft are equipped with wind shear detection systems, and pilots are trained in recovery techniques, which typically involve applying maximum thrust and maintaining or establishing a positive climb rate without attempting to regain lost airspeed immediately. Airports also use low-level wind shear alert systems to warn pilots of dangerous conditions."</p>
+          </div>
+        </div>
+
+        <!-- Interview Etiquette and Presentation -->
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-2xl font-bold mb-6">3. Interview Etiquette and Presentation</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Professional Appearance</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Dress code:</strong> Conservative business attire (dark suit, white shirt, conservative tie for men; business suit or skirt/blouse combination for women)</li>
+            <li><strong>Grooming:</strong> Neat, clean hair; clean-shaven or well-groomed facial hair for men; minimal makeup and jewelry for women</li>
+            <li><strong>Posture:</strong> Stand and sit straight with shoulders back, projecting confidence and alertness</li>
+            <li><strong>Eye contact:</strong> Maintain appropriate eye contact with all interviewers</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Communication Skills</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Clarity:</strong> Speak clearly and at a moderate pace</li>
+            <li><strong>Conciseness:</strong> Answer questions thoroughly but avoid rambling</li>
+            <li><strong>Confidence:</strong> Project confidence without arrogance</li>
+            <li><strong>Active listening:</strong> Listen carefully to questions before responding</li>
+            <li><strong>Technical language:</strong> Use aviation terminology appropriately to demonstrate knowledge</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Before the Interview</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>Research the airline thoroughly (fleet, routes, recent news, company values)</li>
+            <li>Prepare answers to common questions, but avoid sounding rehearsed</li>
+            <li>Review technical knowledge, especially basic principles of flight</li>
+            <li>Prepare thoughtful questions to ask the interviewers</li>
+            <li>Get a good night's sleep and eat a light meal before the interview</li>
+            <li>Arrive 15-20 minutes early</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">During the Interview</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>Greet interviewers with a firm handshake and a smile</li>
+            <li>Wait to be invited to sit down</li>
+            <li>Maintain good posture throughout the interview</li>
+            <li>Show enthusiasm for the role and the airline</li>
+            <li>Be honest about your knowledge and experience</li>
+            <li>If you don't know an answer, admit it rather than guessing</li>
+            <li>Demonstrate a safety-conscious mindset in your answers</li>
+            <li>Thank the interviewers for their time at the conclusion</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">After the Interview</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>Send a brief thank-you email within 24 hours</li>
+            <li>Reflect on your performance and note areas for improvement</li>
+            <li>Be patient while waiting for a response</li>
+            <li>If unsuccessful, request feedback for future improvement</li>
+          </ul>
+        </div>
+
+        <!-- Mock Interview Practice -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-6">Mock Interview Practice</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4">HR Interview Simulation</h3>
+              <p class="mb-4">
+                Practice with our interactive HR interview simulation featuring common questions and feedback on your responses.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Start HR Interview Practice
+              </button>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Technical Interview Preparation</h3>
+              <p class="mb-4">
+                Test your technical knowledge with our comprehensive question bank covering all aspects of aviation theory.
+              </p>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Start Technical Practice
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -593,9 +1885,6 @@
           <p class="text-lg">This isn't just a platform. It's your launchpad to the skies.</p>
         </div>
         
-        <div class="grid gri  It's your launchpad to the skies.</p>
-        </div>
-        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div class="bg-white p-6 rounded-lg shadow-md">
             <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
@@ -642,29 +1931,4 @@
           </p>
           
           <div class="bg-white p-6 rounded-lg shadow-md inline-block">
-            <p class="mb-2"><strong>Email:</strong> captain@cadetpilothub.com</p>
-            <p><strong>Instagram:</strong> @cadetpilothub</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-white shadow mt-12 py-6 text-center text-sm">
-    <p>© 2025 Cadet Pilot Hub. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript for mobile menu toggle -->
-  <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileMenu.style.display === 'flex') {
-        mobileMenu.style.display = 'none';
-      } else {
-        mobileMenu.style.display = 'flex';
-      }
-    }
-  </script>
-</body>
-</html>
+            <p class="mb-2"><strong>Email:</strong> captain@cadetpiloth
