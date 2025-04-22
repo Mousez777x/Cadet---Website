@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-color: #f9fafb;
+      background-color: #f0f4f8;
       color: #1f2937;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
@@ -77,6 +77,92 @@
       border-radius: 0.5rem;
       border: 1px solid #e5e7eb;
     }
+    
+    .hero-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+    }
+    
+    .section-header {
+      background-image: linear-gradient(rgba(37, 99, 235, 0.9), rgba(29, 78, 216, 0.85));
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .formula-sheet {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .formula-category {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      color: #2563eb;
+    }
+    
+    .simulation-box {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    
+    .simulation-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+    }
+    
+    .test-container {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .test-question {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .test-option {
+      display: block;
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+    
+    .test-option:hover {
+      background-color: #f3f4f6;
+    }
+    
+    .test-button {
+      background-color: #2563eb;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.25rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .test-button:hover {
+      background-color: #1d4ed8;
+    }
   </style>
 </head>
 <body>
@@ -121,83 +207,98 @@
   </header>
 
   <main>
-    <!-- Home Section -->
-    <section id="home" class="bg-blue-100 py-12 text-center px-4">
-      <h2 class="text-4xl font-bold mb-2">Your Journey to the Flight Deck Starts Here</h2>
-      <p class="text-lg mb-6">Pilot assessments, guidance, and gear — built for cadets in the UAE & Middle East.</p>
-      <div class="space-x-4">
-        <a href="#assessments" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 inline-block">
-          Explore Assessments
-        </a>
-        <a href="#products" class="bg-gray-300 text-gray-800 px-6 py-2 rounded hover:bg-gray-400 inline-block">
-          Join Product Waitlist
-        </a>
+    <!-- Hero Section with Professional Design -->
+    <section id="home" class="hero-section py-20 text-center px-4">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-5xl font-bold mb-4">Your Journey to the Flight Deck Starts Here</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Comprehensive pilot assessments, guidance, and resources — built specifically for cadet pilots in the UAE & Middle East.</p>
+        <div class="space-x-4">
+          <a href="#assessments" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 inline-block transition duration-300 shadow-lg">
+            Explore Assessments
+          </a>
+          <a href="#products" class="bg-white text-blue-800 px-8 py-3 rounded-lg hover:bg-gray-100 inline-block transition duration-300 shadow-lg">
+            Join Product Waitlist
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- Home Assessments Preview -->
-    <section class="py-12 px-6 max-w-6xl mx-auto">
-      <h3 class="text-3xl font-bold mb-6">🎓 Cadet Pilot Assessments</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-semibold text-xl mb-2">Math Preparation</h4>
-          <p>Algebra, speed/distance/time, logic-based problems.</p>
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-center">🎓 Cadet Pilot Assessments</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition duration-300">
+          <h4 class="font-semibold text-xl mb-3">Math Preparation</h4>
+          <p class="text-gray-600 mb-4">Algebra, speed/distance/time, logic-based problems, and mental arithmetic techniques.</p>
+          <a href="#math-preparation" class="text-blue-600 hover:underline font-medium">Learn more →</a>
         </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-semibold text-xl mb-2">Physics Preparation</h4>
-          <p>Forces, motion, energy — all relevant to aviation physics.</p>
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition duration-300">
+          <h4 class="font-semibold text-xl mb-3">Physics Preparation</h4>
+          <p class="text-gray-600 mb-4">Forces, motion, energy, and aerodynamics — all relevant to aviation physics.</p>
+          <a href="#physics-preparation" class="text-blue-600 hover:underline font-medium">Learn more →</a>
         </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-semibold text-xl mb-2">English & Aviation Terminology</h4>
-          <p>Improve ICAO-standard communication and vocabulary.</p>
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition duration-300">
+          <h4 class="font-semibold text-xl mb-3">English & Aviation Terminology</h4>
+          <p class="text-gray-600 mb-4">Improve ICAO-standard communication and essential aviation vocabulary.</p>
+          <a href="#english-terminology" class="text-blue-600 hover:underline font-medium">Learn more →</a>
         </div>
       </div>
-      <div class="mt-6 text-center">
-        <a href="#assessments" class="text-blue-600 hover:underline">
+      <div class="mt-8 text-center">
+        <a href="#assessments" class="text-blue-600 hover:underline font-medium text-lg">
           View all assessment resources →
         </a>
       </div>
     </section>
 
     <!-- Home Products Preview -->
-    <section class="bg-gray-100 py-12 px-6 text-center">
+    <section class="bg-gray-100 py-16 px-6 text-center">
       <h3 class="text-3xl font-bold mb-4">🛍️ Pilot Products</h3>
-      <p class="text-lg mb-6">Coming Soon — Pilot Wallets, Logbooks, and Accessories.</p>
-      <a href="#products" class="text-blue-600 hover:underline">
+      <p class="text-lg mb-6 max-w-3xl mx-auto">Coming Soon — Premium Pilot Wallets, Logbooks, and Accessories designed specifically for cadet pilots.</p>
+      <a href="#products" class="text-blue-600 hover:underline font-medium">
         Learn more about our products →
       </a>
     </section>
 
     <!-- Home Blog Preview -->
-    <section class="py-12 px-6 max-w-6xl mx-auto">
-      <h3 class="text-3xl font-bold mb-6">📚 Free Resources / Blog</h3>
-      <ul class="space-y-4">
-        <li>✈️ How to Apply for UAE Cadet Programs</li>
-        <li>🧠 Study Hacks That Work</li>
-        <li>🎤 How I Passed My Etihad Assessment</li>
-      </ul>
-      <div class="mt-6 text-center">
-        <a href="#blog" class="text-blue-600 hover:underline">
-          Read all blog posts →
-        </a>
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-center">📚 Free Resources / Blog</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <div class="text-3xl mb-3">✈️</div>
+          <h4 class="font-semibold text-xl mb-2">How to Apply for UAE Cadet Programs</h4>
+          <p class="text-gray-600 mb-4">A step-by-step guide to applying for cadet pilot programs at major UAE airlines.</p>
+          <a href="#blog" class="text-blue-600 hover:underline font-medium">Read more →</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <div class="text-3xl mb-3">🧠</div>
+          <h4 class="font-semibold text-xl mb-2">Study Hacks That Work</h4>
+          <p class="text-gray-600 mb-4">Effective study techniques specifically tailored for aviation theory and pilot assessments.</p>
+          <a href="#blog" class="text-blue-600 hover:underline font-medium">Read more →</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+          <div class="text-3xl mb-3">🎤</div>
+          <h4 class="font-semibold text-xl mb-2">How I Passed My Etihad Assessment</h4>
+          <p class="text-gray-600 mb-4">A personal account of the Etihad Airways cadet pilot assessment process with tips and insights.</p>
+          <a href="#blog" class="text-blue-600 hover:underline font-medium">Read more →</a>
+        </div>
       </div>
     </section>
 
     <!-- Assessments Section -->
     <section id="assessments" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+      <div class="section-header text-white py-16 px-6 text-center">
         <h1 class="text-4xl font-bold mb-4">Cadet Pilot Assessments</h1>
         <p class="text-xl max-w-3xl mx-auto">
           Comprehensive preparation materials for all aspects of cadet pilot assessments
         </p>
       </div>
 
-      <div class="py-12 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Assessment Categories</h2>
+      <div class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Assessment Categories</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white shadow rounded-lg overflow-hidden">
-            <div class="bg-blue-100 p-4">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <div class="bg-blue-100 p-6">
               <h3 class="font-bold text-xl">Math Preparation</h3>
             </div>
             <div class="p-6">
@@ -211,14 +312,14 @@
                 <li>Logic-based problems</li>
                 <li>Mental arithmetic techniques</li>
               </ul>
-              <a href="#math-preparation" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
+              <a href="#math-preparation" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full block text-center transition duration-300">
                 Access Math Resources
               </a>
             </div>
           </div>
 
-          <div class="bg-white shadow rounded-lg overflow-hidden">
-            <div class="bg-blue-100 p-4">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <div class="bg-blue-100 p-6">
               <h3 class="font-bold text-xl">Physics Preparation</h3>
             </div>
             <div class="p-6">
@@ -230,14 +331,14 @@
                 <li>Pressure and atmosphere</li>
                 <li>Practical applications in flight</li>
               </ul>
-              <a href="#physics-preparation" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
+              <a href="#physics-preparation" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full block text-center transition duration-300">
                 Access Physics Resources
               </a>
             </div>
           </div>
 
-          <div class="bg-white shadow rounded-lg overflow-hidden">
-            <div class="bg-blue-100 p-4">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <div class="bg-blue-100 p-6">
               <h3 class="font-bold text-xl">English & Aviation Terminology</h3>
             </div>
             <div class="p-6">
@@ -245,18 +346,17 @@
               <ul class="list-disc pl-5 space-y-2">
                 <li>Aviation-specific vocabulary</li>
                 <li>Radio communication phrases</li>
-                <li>Technical reading comprehension</li>
                 <li>Grammar and pronunciation</li>
                 <li>ICAO language proficiency requirements</li>
               </ul>
-              <a href="#english-terminology" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
+              <a href="#english-terminology" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full block text-center transition duration-300">
                 Access English Resources
               </a>
             </div>
           </div>
           
-          <div class="bg-white shadow rounded-lg overflow-hidden">
-            <div class="bg-blue-100 p-4">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <div class="bg-blue-100 p-6">
               <h3 class="font-bold text-xl">Interview Q&A</h3>
             </div>
             <div class="p-6">
@@ -266,16 +366,15 @@
                 <li>Technical aviation questions</li>
                 <li>Situational judgment scenarios</li>
                 <li>Interview etiquette and presentation</li>
-                <li>Mock interview practice guides</li>
               </ul>
-              <a href="#interview-qa" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full block text-center">
+              <a href="#interview-qa" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full block text-center transition duration-300">
                 Access Interview Resources
               </a>
             </div>
           </div>
           
-          <div class="bg-white shadow rounded-lg overflow-hidden">
-            <div class="bg-blue-100 p-4">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+            <div class="bg-blue-100 p-6">
               <h3 class="font-bold text-xl">Airline-Specific Assessments</h3>
             </div>
             <div class="p-6">
@@ -287,7 +386,7 @@
                 <li>Wizz Air selection process</li>
                 <li>Other Middle Eastern carriers</li>
               </ul>
-              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+              <button class="mt-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full transition duration-300">
                 Access Airline-Specific Resources
               </button>
             </div>
@@ -295,9 +394,9 @@
         </div>
       </div>
 
-      <div class="bg-gray-100 py-12 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6">Success Stories</h2>
-        <div class="max-w-4xl mx-auto">
+      <div class="bg-gray-100 py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">Success Stories</h2>
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
           <blockquote class="italic text-lg mb-4">
             "The math and physics resources helped me ace my Emirates assessment. I couldn't have done it without Cadet Pilot Hub!"
           </blockquote>
@@ -308,15 +407,15 @@
 
     <!-- Math Preparation Section -->
     <section id="math-preparation" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+      <div class="section-header text-white py-16 px-6 text-center">
         <h1 class="text-4xl font-bold mb-4">Math Preparation</h1>
         <p class="text-xl max-w-3xl mx-auto">
           Master the mathematical concepts essential for cadet pilot assessments
         </p>
       </div>
 
-      <div class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+      <div class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-3xl font-bold mb-6">Introduction to Math for Pilot Assessments</h2>
           <p class="mb-4">
             Mathematical aptitude is a critical component of pilot assessments. Airlines test these skills because pilots must perform calculations related to fuel consumption, weight and balance, navigation, and more. The math tested in cadet assessments typically focuses on:
@@ -333,7 +432,7 @@
         </div>
 
         <!-- Algebra and Equations -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">1. Algebra and Equations</h2>
           
           <h3 class="text-xl font-semibold mb-4">Linear Equations</h3>
@@ -398,7 +497,7 @@
         </div>
 
         <!-- Speed, Distance, and Time -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">2. Speed, Distance, and Time Calculations</h2>
           
           <p class="mb-4">
@@ -476,7 +575,7 @@
         </div>
 
         <!-- Percentages and Ratios -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">3. Percentages and Ratios</h2>
           
           <p class="mb-4">
@@ -550,7 +649,7 @@
         </div>
 
         <!-- Mental Arithmetic -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">4. Mental Arithmetic Techniques</h2>
           
           <p class="mb-4">
@@ -606,30 +705,97 @@
           </div>
         </div>
 
-        <!-- Additional Resources -->
-        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+        <!-- Additional Resources with Practice Test (Removed Video Tutorials) -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-lg">
           <h2 class="text-2xl font-bold mb-6">Additional Math Resources</h2>
           
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Practice Tests</h3>
-              <p class="mb-4">
-                Test your knowledge with our comprehensive practice tests, designed to simulate the math section of cadet pilot assessments.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Access Practice Tests
-              </button>
+          <div class="test-container">
+            <h3 class="text-xl font-semibold mb-6">Practice Test</h3>
+            <p class="mb-6">Test your knowledge with our comprehensive practice test, designed to simulate the math section of cadet pilot assessments.</p>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 1: An aircraft is flying at a true airspeed of 480 knots with a 30-knot tailwind. If the distance to the destination is 1,275 nautical miles, how long will the flight take?</p>
+              <label class="test-option">
+                <input type="radio" name="q1" value="a"> a) 2 hours 30 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q1" value="b"> b) 2 hours 40 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q1" value="c"> c) 2 hours 45 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q1" value="d"> d) 2 hours 50 minutes
+              </label>
             </div>
             
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Video Tutorials</h3>
-              <p class="mb-4">
-                Watch our step-by-step video tutorials explaining key mathematical concepts and problem-solving techniques.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Watch Video Tutorials
-              </button>
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 2: An aircraft has a fuel capacity of 6,800 kg. If it burns fuel at a rate of 1,700 kg per hour, what percentage of its fuel capacity will it use during a 3-hour flight?</p>
+              <label class="test-option">
+                <input type="radio" name="q2" value="a"> a) 65%
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q2" value="b"> b) 70%
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q2" value="c"> c) 75%
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q2" value="d"> d) 80%
+              </label>
             </div>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 3: An aircraft climbs at a rate of 1,200 feet per minute. How long will it take to climb from 5,000 feet to 28,000 feet?</p>
+              <label class="test-option">
+                <input type="radio" name="q3" value="a"> a) 19 minutes 10 seconds
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q3" value="b"> b) 19 minutes 30 seconds
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q3" value="c"> c) 20 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q3" value="d"> d) 23 minutes
+              </label>
+            </div>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 4: The ratio of passengers to crew on a flight is 32:4. If there are 256 passengers, how many crew members are on board?</p>
+              <label class="test-option">
+                <input type="radio" name="q4" value="a"> a) 28
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q4" value="b"> b) 30
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q4" value="c"> c) 32
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q4" value="d"> d) 36
+              </label>
+            </div>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 5: An aircraft flies from point A to point B at 400 knots, then returns from B to A at 350 knots. If the distance between A and B is 700 nautical miles, what is the total flight time?</p>
+              <label class="test-option">
+                <input type="radio" name="q5" value="a"> a) 3 hours 30 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q5" value="b"> b) 3 hours 45 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q5" value="c"> c) 4 hours
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q5" value="d"> d) 4 hours 15 minutes
+              </label>
+            </div>
+            
+            <button class="test-button mt-6" onclick="alert('Correct answers: 1-c, 2-c, 3-a, 4-c, 5-b')">
+              Check Answers
+            </button>
           </div>
         </div>
       </div>
@@ -637,15 +803,15 @@
 
     <!-- Physics Preparation Section -->
     <section id="physics-preparation" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+      <div class="section-header text-white py-16 px-6 text-center">
         <h1 class="text-4xl font-bold mb-4">Physics Preparation</h1>
         <p class="text-xl max-w-3xl mx-auto">
           Understanding the physics principles that make flight possible
         </p>
       </div>
 
-      <div class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+      <div class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-3xl font-bold mb-6">Introduction to Aviation Physics</h2>
           <p class="mb-4">
             Physics is fundamental to understanding how aircraft fly and operate. Cadet pilot assessments test your knowledge of basic physics principles and their application to aviation. This section covers the key physics concepts you need to master for your assessments.
@@ -656,7 +822,7 @@
         </div>
 
         <!-- Forces and Motion -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">1. Forces and Motion</h2>
           
           <h3 class="text-xl font-semibold mb-4">Newton's Laws of Motion</h3>
@@ -739,7 +905,7 @@
         </div>
 
         <!-- Basic Aerodynamics -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">2. Basic Aerodynamics</h2>
           
           <h3 class="text-xl font-semibold mb-4">Bernoulli's Principle</h3>
@@ -804,7 +970,7 @@
         </div>
 
         <!-- Pressure and Atmosphere -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">3. Pressure and Atmosphere</h2>
           
           <h3 class="text-xl font-semibold mb-4">Atmospheric Pressure</h3>
@@ -870,7 +1036,7 @@
         </div>
 
         <!-- Energy and Power -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">4. Energy and Power</h2>
           
           <h3 class="text-xl font-semibold mb-4">Kinetic and Potential Energy</h3>
@@ -935,29 +1101,142 @@
           </div>
         </div>
 
-        <!-- Additional Resources -->
-        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
-          <h2 class="text-2xl font-bold mb-6">Additional Physics Resources</h2>
+        <!-- Physics Formula Sheet for Student Pilot Pre-assessment -->
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+          <h2 class="text-2xl font-bold mb-6">Physics Formula Sheet for Cadet Pilot Pre-assessment</h2>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Forces and Motion</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Newton's Second Law:</p>
+                <div class="math-formula">F = ma</div>
+                <p class="text-sm mt-1">Force (N) = mass (kg) × acceleration (m/s²)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Weight:</p>
+                <div class="math-formula">W = mg</div>
+                <p class="text-sm mt-1">Weight (N) = mass (kg) × gravitational acceleration (9.8 m/s²)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Aerodynamics</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Lift Equation:</p>
+                <div class="math-formula">L = CL × ½ × ρ × V² × S</div>
+                <p class="text-sm mt-1">L = lift (N), CL = lift coefficient, ρ = air density (kg/m³), V = velocity (m/s), S = wing area (m²)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Drag Equation:</p>
+                <div class="math-formula">D = CD × ½ × ρ × V² × S</div>
+                <p class="text-sm mt-1">D = drag (N), CD = drag coefficient, ρ = air density (kg/m³), V = velocity (m/s), S = wing area (m²)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Energy and Power</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Kinetic Energy:</p>
+                <div class="math-formula">KE = ½ × m × v²</div>
+                <p class="text-sm mt-1">KE = kinetic energy (J), m = mass (kg), v = velocity (m/s)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Potential Energy:</p>
+                <div class="math-formula">PE = m × g × h</div>
+                <p class="text-sm mt-1">PE = potential energy (J), m = mass (kg), g = 9.8 m/s², h = height (m)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Power:</p>
+                <div class="math-formula">P = F × v</div>
+                <p class="text-sm mt-1">P = power (W), F = force (N), v = velocity (m/s)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Pressure and Atmosphere</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Pressure:</p>
+                <div class="math-formula">P = F ÷ A</div>
+                <p class="text-sm mt-1">P = pressure (Pa), F = force (N), A = area (m²)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Standard Atmospheric Pressure:</p>
+                <div class="math-formula">1013.25 hPa = 29.92 inHg</div>
+                <p class="text-sm mt-1">At sea level</p>
+              </div>
+              <div>
+                <p class="font-semibold">Pressure Decrease with Altitude:</p>
+                <div class="math-formula">~1 inHg per 1,000 ft</div>
+                <p class="text-sm mt-1">Approximate rule of thumb</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Speed, Distance, and Time</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <p class="font-semibold">Speed:</p>
+                <div class="math-formula">v = d ÷ t</div>
+                <p class="text-sm mt-1">v = speed, d = distance, t = time</p>
+              </div>
+              <div>
+                <p class="font-semibold">Distance:</p>
+                <div class="math-formula">d = v × t</div>
+                <p class="text-sm mt-1">d = distance, v = speed, t = time</p>
+              </div>
+              <div>
+                <p class="font-semibold">Time:</p>
+                <div class="math-formula">t = d ÷ v</div>
+                <p class="text-sm mt-1">t = time, d = distance, v = speed</p>
+              </div>
+              <div>
+                <p class="font-semibold">Ground Speed with Wind:</p>
+                <div class="math-formula">GS = TAS ± Wind</div>
+                <p class="text-sm mt-1">GS = ground speed, TAS = true airspeed, + for tailwind, - for headwind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Physics Simulations -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-6">Interactive Physics Simulations</h2>
           
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Interactive Simulations</h3>
-              <p class="mb-4">
-                Explore interactive physics simulations that demonstrate key aviation concepts in action.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Access Simulations
-              </button>
+            <div class="simulation-box">
+              <h3 class="text-xl font-semibold mb-4">Airfoil Lift Simulation</h3>
+              <img src="https://images.unsplash.com/photo-1534481016308-0fca71578ae5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Airfoil Simulation" class="simulation-image">
+              <p class="mb-4">This interactive simulation demonstrates how airflow around an airfoil generates lift. Adjust the angle of attack and airspeed to see how they affect lift production.</p>
+              <button class="test-button">Launch Simulation</button>
             </div>
             
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Physics Formula Sheet</h3>
-              <p class="mb-4">
-                Download our comprehensive aviation physics formula sheet for quick reference during your studies.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Download Formula Sheet
-              </button>
+            <div class="simulation-box">
+              <h3 class="text-xl font-semibold mb-4">Forces in Flight Simulation</h3>
+              <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Forces in Flight" class="simulation-image">
+              <p class="mb-4">Explore how the four forces of flight (lift, weight, thrust, and drag) interact during different phases of flight. Modify aircraft parameters to see their effects on performance.</p>
+              <button class="test-button">Launch Simulation</button>
+            </div>
+            
+            <div class="simulation-box">
+              <h3 class="text-xl font-semibold mb-4">Bernoulli's Principle Demonstration</h3>
+              <img src="https://images.unsplash.com/photo-1579438791781-cb8ea4e35ba7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Bernoulli's Principle" class="simulation-image">
+              <p class="mb-4">This simulation visually demonstrates Bernoulli's principle, showing how fluid velocity affects pressure. See how this principle applies to aircraft wings and lift generation.</p>
+              <button class="test-button">Launch Simulation</button>
+            </div>
+            
+            <div class="simulation-box">
+              <h3 class="text-xl font-semibold mb-4">Density Altitude Calculator</h3>
+              <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Density Altitude" class="simulation-image">
+              <p class="mb-4">Calculate density altitude based on pressure altitude, temperature, and humidity. See how these factors affect aircraft performance during takeoff, climb, and landing.</p>
+              <button class="test-button">Launch Simulation</button>
             </div>
           </div>
         </div>
@@ -966,26 +1245,26 @@
 
     <!-- English & Aviation Terminology Section -->
     <section id="english-terminology" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+      <div class="section-header text-white py-16 px-6 text-center">
         <h1 class="text-4xl font-bold mb-4">English & Aviation Terminology</h1>
         <p class="text-xl max-w-3xl mx-auto">
           Master the language of aviation and ICAO English requirements
         </p>
       </div>
 
-      <div class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+      <div class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-3xl font-bold mb-6">Introduction to Aviation English</h2>
           <p class="mb-4">
             English is the international language of aviation. All pilots operating internationally must demonstrate proficiency in aviation English according to the International Civil Aviation Organization (ICAO) standards. This section will help you prepare for the English language components of cadet pilot assessments.
           </p>
           <p>
-            We'll cover aviation-specific vocabulary, radio communication phrases, technical reading comprehension, grammar and pronunciation, and ICAO language proficiency requirements. Each topic includes explanations, examples, and practice exercises.
+            We'll cover aviation-specific vocabulary, radio communication phrases, grammar and pronunciation, and ICAO language proficiency requirements. Each topic includes explanations, examples, and practice exercises.
           </p>
         </div>
 
         <!-- Aviation Vocabulary -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">1. Aviation-Specific Vocabulary</h2>
           
           <h3 class="text-xl font-semibold mb-4">Aircraft Components</h3>
@@ -994,7 +1273,6 @@
               <p class="mb-2"><span class="vocabulary-term">Fuselage:</span> The main body of the aircraft.</p>
               <p class="mb-2"><span class="vocabulary-term">Empennage:</span> The tail section of an aircraft.</p>
               <p class="mb-2"><span class="vocabulary-term">Aileron:</span> Control surface on the wing that controls roll.</p>
-                Control surface on the wing that controls roll.</p>
               <p class="mb-2"><span class="vocabulary-term">Elevator:</span> Control surface on the horizontal stabilizer that controls pitch.</p>
               <p class="mb-2"><span class="vocabulary-term">Rudder:</span> Control surface on the vertical stabilizer that controls yaw.</p>
             </div>
@@ -1053,7 +1331,7 @@
         </div>
 
         <!-- Radio Communication -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">2. Radio Communication Phrases</h2>
           
           <h3 class="text-xl font-semibold mb-4">Standard Phraseology</h3>
@@ -1158,78 +1436,9 @@
           </div>
         </div>
 
-        <!-- Technical Reading Comprehension -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
-          <h2 class="text-2xl font-bold mb-6">3. Technical Reading Comprehension</h2>
-          
-          <p class="mb-4">
-            Pilots must be able to read and understand technical documents such as aircraft manuals, NOTAMs (Notices to Airmen), and weather reports. Here's an example of a technical passage followed by comprehension questions:
-          </p>
-          
-          <div class="bg-blue-50 p-6 rounded-lg mb-6">
-            <h3 class="font-semibold mb-2">Sample METAR:</h3>
-            <p class="font-mono">OMDB 151530Z 34015G25KT 310V020 6000 NSC 39/12 Q1008 NOSIG</p>
-            
-            <h4 class="font-semibold mt-4 mb-2">Decoded:</h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li>OMDB: Dubai International Airport</li>
-              <li>151530Z: 15th day of the month at 15:30 UTC</li>
-              <li>34015G25KT: Wind from 340° at 15 knots, gusting to 25 knots</li>
-              <li>310V020: Wind direction varying between 310° and 020°</li>
-              <li>6000: Visibility 6000 meters</li>
-              <li>NSC: No significant clouds</li>
-              <li>39/12: Temperature 39°C, dew point 12°C</li>
-              <li>Q1008: QNH 1008 hPa</li>
-              <li>NOSIG: No significant change expected</li>
-            </ul>
-          </div>
-          
-          <h3 class="text-xl font-semibold mb-4">Comprehension Questions</h3>
-          
-          <div class="practice-question">
-            <p class="mb-2">1. What is the wind direction and speed at Dubai International Airport?</p>
-            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">From 340° at 15 knots, gusting to 25 knots, varying between 310° and 020°</span></p>
-          </div>
-          
-          <div class="practice-question">
-            <p class="mb-2">2. What is the temperature and dew point?</p>
-            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Temperature 39°C, dew point 12°C</span></p>
-          </div>
-          
-          <div class="practice-question">
-            <p class="mb-2">3. What does "NOSIG" indicate in this METAR?</p>
-            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">No significant change expected in the weather conditions</span></p>
-          </div>
-          
-          <h3 class="text-xl font-semibold mb-4 mt-8">Sample NOTAM</h3>
-          <div class="bg-blue-50 p-6 rounded-lg mb-6">
-            <p class="font-mono">A0125/23 NOTAMN</p>
-            <p class="font-mono">Q) OMAE/QMRLC/IV/NBO/A/000/999/2518N05518E005</p>
-            <p class="font-mono">A) OMDB B) 2305150600 C) 2305171800</p>
-            <p class="font-mono">E) RWY 12L/30R CLSD DUE TO MAINTENANCE</p>
-          </div>
-          
-          <h3 class="text-xl font-semibold mb-4">Comprehension Questions</h3>
-          
-          <div class="practice-question">
-            <p class="mb-2">1. Which runway is closed at Dubai International Airport?</p>
-            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Runway 12L/30R</span></p>
-          </div>
-          
-          <div class="practice-question">
-            <p class="mb-2">2. What is the reason for the closure?</p>
-            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">Maintenance</span></p>
-          </div>
-          
-          <div class="practice-question">
-            <p class="mb-2">3. What is the time period of the closure? (in UTC)</p>
-            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">From May 15, 2023, at 06:00 UTC to May 17, 2023, at 18:00 UTC</span></p>
-          </div>
-        </div>
-
         <!-- ICAO Language Proficiency -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
-          <h2 class="text-2xl font-bold mb-6">4. ICAO Language Proficiency Requirements</h2>
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+          <h2 class="text-2xl font-bold mb-6">3. ICAO Language Proficiency Requirements</h2>
           
           <p class="mb-4">
             The International Civil Aviation Organization (ICAO) has established language proficiency requirements for pilots operating internationally. Pilots must demonstrate proficiency in the following areas:
@@ -1293,58 +1502,31 @@
             <li>Practice speaking at an appropriate pace, neither too fast nor too slow</li>
           </ul>
         </div>
-
-        <!-- Additional Resources -->
-        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
-          <h2 class="text-2xl font-bold mb-6">Additional English & Aviation Terminology Resources</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Aviation English Practice Tests</h3>
-              <p class="mb-4">
-                Test your aviation English proficiency with our comprehensive practice tests designed to simulate ICAO language assessments.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Access Practice Tests
-              </button>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Radio Communication Simulator</h3>
-              <p class="mb-4">
-                Practice realistic ATC communications with our interactive radio communication simulator.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Try Communication Simulator
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Interview Q&A Section -->
     <section id="interview-qa" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+      <div class="section-header text-white py-16 px-6 text-center">
         <h1 class="text-4xl font-bold mb-4">Interview Q&A Preparation</h1>
         <p class="text-xl max-w-3xl mx-auto">
           Prepare for HR and technical interviews with comprehensive question guides
         </p>
       </div>
 
-      <div class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+      <div class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-3xl font-bold mb-6">Introduction to Cadet Pilot Interviews</h2>
           <p class="mb-4">
             The interview stage is a critical component of the cadet pilot selection process. Airlines use interviews to assess not only your technical knowledge but also your personality, communication skills, and suitability for a career as a pilot.
           </p>
           <p>
-            This section provides comprehensive preparation for both HR (human resources) and technical interviews. We'll cover common questions, suggested answers, interview etiquette, and strategies to help you make a positive impression.
+            This section provides comprehensive preparation for both HR (human resources) and technical interviews. We'll cover common questions, suggested answers, and strategies to help you make a positive impression.
           </p>
         </div>
 
         <!-- HR Interview Questions -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">1. HR Interview Questions</h2>
           
           <h3 class="text-xl font-semibold mb-4">Personal Background and Motivation</h3>
@@ -1397,7 +1579,7 @@
         </div>
 
         <!-- Technical Interview Questions -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">2. Technical Interview Questions</h2>
           
           <h3 class="text-xl font-semibold mb-4">Basic Aerodynamics</h3>
@@ -1458,18 +1640,10 @@
         </div>
 
         <!-- Interview Etiquette and Presentation -->
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
           <h2 class="text-2xl font-bold mb-6">3. Interview Etiquette and Presentation</h2>
           
-          <h3 class="text-xl font-semibold mb-4">Professional Appearance</h3>
-          <ul class="list-disc pl-5 space-y-2 mb-6">
-            <li><strong>Dress code:</strong> Conservative business attire (dark suit, white shirt, conservative tie for men; business suit or skirt/blouse combination for women)</li>
-            <li><strong>Grooming:</strong> Neat, clean hair; clean-shaven or well-groomed facial hair for men; minimal makeup and jewelry for women</li>
-            <li><strong>Posture:</strong> Stand and sit straight with shoulders back, projecting confidence and alertness</li>
-            <li><strong>Eye contact:</strong> Maintain appropriate eye contact with all interviewers</li>
-          </ul>
-          
-          <h3 class="text-xl font-semibold mb-4 mt-8">Communication Skills</h3>
+          <h3 class="text-xl font-semibold mb-4">Communication Skills</h3>
           <ul class="list-disc pl-5 space-y-2 mb-6">
             <li><strong>Clarity:</strong> Speak clearly and at a moderate pace</li>
             <li><strong>Conciseness:</strong> Answer questions thoroughly but avoid rambling</li>
@@ -1499,82 +1673,47 @@
             <li>Demonstrate a safety-conscious mindset in your answers</li>
             <li>Thank the interviewers for their time at the conclusion</li>
           </ul>
-          
-          <h3 class="text-xl font-semibold mb-4 mt-8">After the Interview</h3>
-          <ul class="list-disc pl-5 space-y-2 mb-6">
-            <li>Send a brief thank-you email within 24 hours</li>
-            <li>Reflect on your performance and note areas for improvement</li>
-            <li>Be patient while waiting for a response</li>
-            <li>If unsuccessful, request feedback for future improvement</li>
-          </ul>
-        </div>
-
-        <!-- Mock Interview Practice -->
-        <div class="bg-blue-50 p-8 rounded-lg shadow-md">
-          <h2 class="text-2xl font-bold mb-6">Mock Interview Practice</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold mb-4">HR Interview Simulation</h3>
-              <p class="mb-4">
-                Practice with our interactive HR interview simulation featuring common questions and feedback on your responses.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Start HR Interview Practice
-              </button>
-            </div>
-            
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Technical Interview Preparation</h3>
-              <p class="mb-4">
-                Test your technical knowledge with our comprehensive question bank covering all aspects of aviation theory.
-              </p>
-              <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Start Technical Practice
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- Products Section -->
     <section id="products" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+      <div class="section-header text-white py-16 px-6 text-center">
         <h1 class="text-4xl font-bold mb-4">Pilot Products</h1>
         <p class="text-xl max-w-3xl mx-auto">Premium aviation accessories designed specifically for cadet pilots</p>
       </div>
 
-      <div class="py-12 px-6 max-w-6xl mx-auto text-center">
+      <div class="py-16 px-6 max-w-6xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">Coming Soon</h2>
-        <p class="text-xl mb-8">
+        <p class="text-xl mb-8 max-w-3xl mx-auto">
           We're developing a range of high-quality products specifically designed for cadet pilots. Join our waitlist to
           be the first to know when they launch!
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
             <div class="text-4xl mb-4">✈️</div>
-            <h3 class="text-xl font-bold mb-2">Pilot Wallets</h3>
-            <p>Premium leather wallets with dedicated compartments for licenses, IDs, and flight documents.</p>
+            <h3 class="text-xl font-bold mb-3">Pilot Wallets</h3>
+            <p class="text-gray-600">Premium leather wallets with dedicated compartments for licenses, IDs, and flight documents.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
             <div class="text-4xl mb-4">📓</div>
-            <h3 class="text-xl font-bold mb-2">Logbooks</h3>
-            <p>Professionally designed logbooks with durable covers and organized layouts for flight hours.</p>
+            <h3 class="text-xl font-bold mb-3">Logbooks</h3>
+            <p class="text-gray-600">Professionally designed logbooks with durable covers and organized layouts for flight hours.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
             <div class="text-4xl mb-4">🎒</div>
-            <h3 class="text-xl font-bold mb-2">Flight Bags</h3>
-            <p>Compact, organized bags designed to carry all your essentials for training flights.</p>
+            <h3 class="text-xl font-bold mb-3">Flight Bags</h3>
+            <p class="text-gray-600">Compact, organized bags designed to carry all your essentials for training flights.</p>
           </div>
         </div>
 
-        <div class="max-w-md mx-auto">
+        <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold mb-4">Join the Waitlist</h3>
-          <p class="mb-6">
+          <p class="mb-6 text-gray-600">
             Be the first to know when our products launch and receive exclusive early-bird discounts!
           </p>
 
@@ -1582,34 +1721,34 @@
             <input
               type="email"
               placeholder="Enter your email"
-              class="w-full p-3 rounded-l border border-gray-300 mb-2 md:mb-0"
+              class="w-full p-3 rounded-l border border-gray-300 mb-2 md:mb-0 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
-            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700">
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700 transition duration-300">
               Notify Me
             </button>
           </form>
         </div>
       </div>
       
-      <div class="bg-gray-100 py-12 px-6">
+      <div class="bg-gray-100 py-16 px-6">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-3xl font-bold mb-8 text-center">Product FAQs</h2>
           
           <div class="space-y-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
               <h3 class="font-bold text-xl mb-2">When will products be available?</h3>
-              <p>We're aiming to launch our first collection in Q3 2025. Join our waitlist to be notified!</p>
+              <p class="text-gray-600">We're aiming to launch our first collection in Q3 2025. Join our waitlist to be notified!</p>
             </div>
             
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
               <h3 class="font-bold text-xl mb-2">Will you ship internationally?</h3>
-              <p>Yes! We'll ship to all major countries, with a focus on the UAE and Middle East region.</p>
+              <p class="text-gray-600">Yes! We'll ship to all major countries, with a focus on the UAE and Middle East region.</p>
             </div>
             
-            <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
               <h3 class="font-bold text-xl mb-2">Can I request custom products?</h3>
-              <p>We're planning to offer customization options for select products. More details coming soon!</p>
+              <p class="text-gray-600">We're planning to offer customization options for select products. More details coming soon!</p>
             </div>
           </div>
         </div>
@@ -1618,16 +1757,16 @@
 
     <!-- Blog Section -->
     <section id="blog" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
+      <div class="section-header text-white py-16 px-6 text-center">
         <h1 class="text-4xl font-bold mb-4">Blog & Free Resources</h1>
         <p class="text-xl max-w-3xl mx-auto">
           Insights, guides, and resources to help you on your journey to becoming a pilot
         </p>
       </div>
 
-      <div class="py-12 px-6 max-w-6xl mx-auto">
+      <div class="py-16 px-6 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
             <div class="bg-blue-100 p-8 text-center">
               <span class="text-5xl">✈️</span>
             </div>
@@ -1640,13 +1779,13 @@
               <p class="text-gray-600 mb-4">
                 A step-by-step guide to applying for cadet pilot programs at major UAE airlines.
               </p>
-              <a href="#" class="text-blue-600 hover:underline">
+              <a href="#" class="text-blue-600 hover:underline font-medium">
                 Read more →
               </a>
             </div>
           </article>
 
-          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
             <div class="bg-blue-100 p-8 text-center">
               <span class="text-5xl">🧠</span>
             </div>
@@ -1659,13 +1798,13 @@
               <p class="text-gray-600 mb-4">
                 Effective study techniques specifically tailored for aviation theory and pilot assessments.
               </p>
-              <a href="#" class="text-blue-600 hover:underline">
+              <a href="#" class="text-blue-600 hover:underline font-medium">
                 Read more →
               </a>
             </div>
           </article>
 
-          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
             <div class="bg-blue-100 p-8 text-center">
               <span class="text-5xl">🎤</span>
             </div>
@@ -1678,257 +1817,17 @@
               <p class="text-gray-600 mb-4">
                 A personal account of the Etihad Airways cadet pilot assessment process with tips and insights.
               </p>
-              <a href="#" class="text-blue-600 hover:underline">
+              <a href="#" class="text-blue-600 hover:underline font-medium">
                 Read more →
               </a>
             </div>
           </article>
           
-          <article class="bg-white rounded-lg shadow-md overflow-hidden">
+          <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
             <div class="bg-blue-100 p-8 text-center">
               <span class="text-5xl">🏥</span>
             </div>
             <div class="p-6">
               <div class="flex justify-between text-sm text-gray-500 mb-2">
                 <span>March 28, 2025</span>
-                <span>7 min read</span>
-              </div>
-              <h2 class="text-xl font-bold mb-2">Understanding Aviation Medical Requirements</h2>
-              <p class="text-gray-600 mb-4">
-                Everything you need to know about Class 1 medical examinations for pilot licenses.
-              </p>
-              <a href="#" class="text-blue-600 hover:underline">
-                Read more →
-              </a>
-            </div>
-          </article>
-          
-          <article class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-blue-100 p-8 text-center">
-              <span class="text-5xl">🌍</span>
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between text-sm text-gray-500 mb-2">
-                <span>March 20, 2025</span>
-                <span>9 min read</span>
-              </div>
-              <h2 class="text-xl font-bold mb-2">The Future of Aviation in the Middle East</h2>
-              <p class="text-gray-600 mb-4">
-                Industry trends and career prospects for pilots in the rapidly growing Middle Eastern aviation sector.
-              </p>
-              <a href="#" class="text-blue-600 hover:underline">
-                Read more →
-              </a>
-            </div>
-          </article>
-          
-          <article class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-blue-100 p-8 text-center">
-              <span class="text-5xl">🎮</span>
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between text-sm text-gray-500 mb-2">
-                <span>March 15, 2025</span>
-                <span>8 min read</span>
-              </div>
-              <h2 class="text-xl font-bold mb-2">Simulator Tips for First-Time Cadets</h2>
-              <p class="text-gray-600 mb-4">
-                How to prepare for and excel in your first simulator assessment.
-              </p>
-              <a href="#" class="text-blue-600 hover:underline">
-                Read more →
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="bg-gray-100 py-12 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold mb-6">Subscribe to Our Newsletter</h2>
-          <p class="mb-6">Get the latest articles, resources, and pilot opportunities delivered to your inbox.</p>
-          <form class="max-w-md mx-auto flex flex-col md:flex-row">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="w-full p-3 rounded-l border border-gray-300 mb-2 md:mb-0"
-              required
-            />
-            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mentorship Section -->
-    <section id="mentorship" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
-        <h1 class="text-4xl font-bold mb-4">1-on-1 Mentorship</h1>
-        <p class="text-xl max-w-3xl mx-auto">
-          Connect with experienced cadets and pilots who've been through the journey
-        </p>
-      </div>
-
-      <div class="py-12 px-6 max-w-6xl mx-auto text-center">
-        <div class="bg-yellow-100 p-6 rounded-lg mb-12 inline-block">
-          <h2 class="text-2xl font-bold">Coming Soon!</h2>
-          <p class="text-lg">Our mentorship program is currently in development and will launch soon.</p>
-        </div>
-
-        <h2 class="text-3xl font-bold mb-8">What to Expect</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-4xl mb-4">🎯</div>
-            <h3 class="text-xl font-bold mb-2">Personalized Guidance</h3>
-            <p>One-on-one sessions tailored to your specific needs, goals, and stage in your pilot journey.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-4xl mb-4">👨‍✈️</div>
-            <h3 class="text-xl font-bold mb-2">Experienced Mentors</h3>
-            <p>Connect with current cadets and professional pilots from major Middle Eastern airlines.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-4xl mb-4">💻</div>
-            <h3 class="text-xl font-bold mb-2">Virtual Sessions</h3>
-            <p>Convenient Zoom sessions that fit your schedule, with options for recorded follow-ups.</p>
-          </div>
-        </div>
-
-        <div class="max-w-md mx-auto">
-          <h3 class="text-2xl font-bold mb-4">Join the Waitlist</h3>
-          <p class="mb-6">Be the first to know when our mentorship program launches!</p>
-
-          <form class="flex flex-col md:flex-row">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="w-full p-3 rounded-l border border-gray-300 mb-2 md:mb-0"
-              required
-            />
-            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-r hover:bg-blue-700">
-              Notify Me
-            </button>
-          </form>
-        </div>
-      </div>
-      
-      <div class="bg-gray-100 py-12 px-6">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-3xl font-bold mb-8 text-center">Mentorship Topics</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="font-bold text-xl mb-2">Assessment Preparation</h3>
-              <p>Get insider tips on how to prepare for and excel in airline assessments.</p>
-            </div>
-            
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="font-bold text-xl mb-2">Interview Coaching</h3>
-              <p>Practice with mock interviews and receive feedback from those who've succeeded.</p>
-            </div>
-            
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="font-bold text-xl mb-2">Study Strategies</h3>
-              <p>Learn effective study techniques for aviation theory and technical knowledge.</p>
-            </div>
-            
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="font-bold text-xl mb-2">Career Planning</h3>
-              <p>Get guidance on planning your aviation career path and setting realistic goals.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="pt-16">
-      <div class="bg-blue-600 text-white py-12 px-6 text-center">
-        <h1 class="text-4xl font-bold mb-4">About Captain Mousa</h1>
-        <p class="text-xl max-w-3xl mx-auto">
-          The story behind Cadet Pilot Hub and our mission to empower aspiring aviators
-        </p>
-      </div>
-
-      <div class="py-12 px-6 max-w-4xl mx-auto">
-        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
-          <h2 class="text-3xl font-bold mb-6 text-center">Our Story</h2>
-
-          <div class="mb-8 text-center">
-            <div class="inline-block bg-blue-100 p-8 rounded-full mb-4">
-              <span class="text-6xl">✈️</span>
-            </div>
-          </div>
-
-          <p class="text-lg mb-4">
-            I'm Captain Mousa — an aspiring aviator with a mission to empower cadets across the UAE and beyond. My
-            journey into aviation began with a childhood fascination with aircraft, which eventually led me to pursue a
-            career as a pilot.
-          </p>
-
-          <p class="text-lg mb-4">
-            During my own cadet application process, I discovered how challenging it can be to find reliable information
-            and resources specifically tailored to the Middle Eastern aviation industry. Many aspiring pilots in our
-            region face similar obstacles.
-          </p>
-
-          <p class="text-lg mb-4">
-            That's why I created Cadet Pilot Hub — to provide a comprehensive platform that offers assessment 
-            preparation, guidance, and community support for cadet pilots in the UAE and surrounding regions.
-          </p>
-
-          <p class="text-lg">This isn't just a platform. It's your launchpad to the skies.</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-            <p class="mb-4">
-              To empower aspiring pilots in the Middle East with the knowledge, resources, and community 
-              support they need to successfully navigate the cadet pilot application process and launch 
-              their aviation careers.
-            </p>
-            <p>
-              We believe that with the right guidance and preparation, more talented individuals from our 
-              region can achieve their dreams of becoming pilots.
-            </p>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-2xl font-bold mb-4">Our Values</h3>
-            <ul class="space-y-2">
-              <li class="flex items-start">
-                <span class="mr-2">✅</span>
-                <span><strong>Accuracy:</strong> We provide reliable, up-to-date information.</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">✅</span>
-                <span><strong>Accessibility:</strong> We make aviation knowledge accessible to all.</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">✅</span>
-                <span><strong>Community:</strong> We foster a supportive environment for aspiring pilots.</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">✅</span>
-                <span><strong>Excellence:</strong> We strive for the highest standards in all our resources.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-gray-100 py-12 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-          <p class="mb-8 text-lg">
-            Have questions or suggestions? We'd love to hear from you!
-          </p>
-          
-          <div class="bg-white p-6 rounded-lg shadow-md inline-block">
-            <p class="mb-2"><strong>Email:</strong> captain@cadetpiloth
+                <span>7 
