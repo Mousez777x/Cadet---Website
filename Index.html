@@ -256,9 +256,87 @@
       background-color: #f3f4f6;
       font-weight: 600;
     }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 50;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal-content {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold">Login / Sign Up</h2>
+        <button onclick="toggleLoginModal()" class="text-gray-500 hover:text-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      
+      <div class="flex border-b border-gray-200">
+        <button id="login-tab" class="px-4 py-2 font-medium border-b-2 border-blue-500" onclick="switchTab('login')">Login</button>
+        <button id="signup-tab" class="px-4 py-2 font-medium text-gray-500" onclick="switchTab('signup')">Sign Up</button>
+      </div>
+      
+      <!-- Login Form -->
+      <div id="login-form" class="py-4">
+        <div class="mb-4">
+          <label for="login-username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+          <input type="text" id="login-username" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-6">
+          <label for="login-password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <input type="password" id="login-password" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-300">Login</button>
+        <div class="mt-4 text-center text-sm text-gray-500">
+          <a href="#" class="text-blue-600 hover:underline">Forgot password?</a>
+        </div>
+      </div>
+      
+      <!-- Signup Form -->
+      <div id="signup-form" class="py-4 hidden">
+        <div class="mb-4">
+          <label for="signup-username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+          <input type="text" id="signup-username" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="signup-email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input type="email" id="signup-email" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="signup-password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <input type="password" id="signup-password" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-6">
+          <label for="signup-confirm" class="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+          <input type="password" id="signup-confirm" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-300">Create Account</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="bg-white shadow sticky top-0 z-10">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -280,6 +358,7 @@
         <a href="#products" class="hover:text-blue-600">Products</a>
         <a href="#blog" class="hover:text-blue-600">Blog</a>
         <a href="#about" class="hover:text-blue-600">About</a>
+        <button onclick="toggleLoginModal()" class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition duration-300">Login</button>
       </nav>
     </div>
     
@@ -292,6 +371,7 @@
       <a href="#products" class="hover:text-blue-600">Products</a>
       <a href="#blog" class="hover:text-blue-600">Blog</a>
       <a href="#about" class="hover:text-blue-600">About</a>
+      <button onclick="toggleLoginModal()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300 w-full">Login</button>
     </nav>
   </header>
 
@@ -342,22 +422,14 @@
       <!-- Products Preview -->
       <div class="bg-gray-100 py-16 px-6 text-center">
         <h3 class="text-3xl font-bold mb-4">Pilot Products</h3>
-        <p class="text-lg mb-6 max-w-3xl mx-auto">Coming Soon — Premium Pilot Wallets, Logbooks, and Accessories designed specifically for cadet pilots.</p>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-8">
+        <p class="text-lg mb-6 max-w-3xl mx-auto">Coming Soon — Premium Logbooks and Accessories designed specifically for cadet pilots.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-8">
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Pilot Wallets" class="w-full h-40 object-cover rounded-lg mb-4">
-            <h4 class="font-semibold text-lg">Pilot Wallets</h4>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Logbooks" class="w-full h-40 object-cover rounded-lg mb-4">
+            <img src="https://i.etsystatic.com/35130867/r/il/1f4c60/4067280641/il_1140xN.4067280641_9tgv.jpg" alt="Logbooks" class="w-full h-60 object-cover rounded-lg mb-4">
             <h4 class="font-semibold text-lg">Logbooks</h4>
           </div>
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Flight Bags" class="w-full h-40 object-cover rounded-lg mb-4">
-            <h4 class="font-semibold text-lg">Flight Bags</h4>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1575908539614-ff89490f4a78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Accessories" class="w-full h-40 object-cover rounded-lg mb-4">
+            <img src="https://i.etsystatic.com/47138845/r/il/5d56db/5720752588/il_1140xN.5720752588_6v43.jpg" alt="Accessories" class="w-full h-60 object-cover rounded-lg mb-4">
             <h4 class="font-semibold text-lg">Accessories</h4>
           </div>
         </div>
@@ -382,17 +454,6 @@
               <a href="#blog" class="text-blue-600 hover:underline font-medium">Read more →</a>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Success Stories -->
-      <div class="bg-gray-100 py-16 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-8">Success Stories</h2>
-        <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-          <blockquote class="italic text-lg mb-4">
-            "The math and physics resources helped me ace my Emirates assessment. I couldn't have done it without Cadet Pilot Hub!"
-          </blockquote>
-          <p class="font-semibold">— Ahmed K., Emirates Cadet Pilot</p>
         </div>
       </div>
     </section>
@@ -1323,7 +1384,7 @@
           <div class="practice-question">
             <p class="mb-2"><strong>Question:</strong> "Explain how a jet engine works."</p>
             <p class="mb-2"><strong>Strategy:</strong> Provide a clear, sequential explanation of the process.</p>
-            <p class="mb-2"><strong>Sample Answer:</strong> "A jet engine, or gas turbine engine, operates on Newton's Third Law of Motion. The process begins with air intake through the fan at the front of the engine. This air is then compressed by the compressor stages, which consist of rotating and stationary blades that progressively increase air pressure. In the combustion chamber, fuel is mixed with the compressed air and ignited, creating a high-temperature, high-pressure gas flow. This hot gas expands through the turbine section, causing the turbine blades to rotate. The turbine is connected by a shaft to the compressor and fan, powering them. Finally, the high-velocity exhaust gas exits through the nozzle, creating thrust. Modern turbofan engines also have a bypass ratio, where some of the air bypasses the core of the engine, providing additional thrust and improved fuel efficiency."</p>
+            <p class="mb-2"><strong>Sample Answer:</strong> "A jet engine, or gas turbine engine, operates on Newton's Third Law of Motion. The process begins with air  or gas turbine engine, operates on Newton's Third Law of Motion. The process begins with air intake through the fan at the front of the engine. This air is then compressed by the compressor stages, which consist of rotating and stationary blades that progressively increase air pressure. In the combustion chamber, fuel is mixed with the compressed air and ignited, creating a high-temperature, high-pressure gas flow. This hot gas expands through the turbine section, causing the turbine blades to rotate. The turbine is connected by a shaft to the compressor and fan, powering them. Finally, the high-velocity exhaust gas exits through the nozzle, creating thrust. Modern turbofan engines also have a bypass ratio, where some of the air bypasses the core of the engine, providing additional thrust and improved fuel efficiency."</p>
           </div>
           
           <div class="practice-question">
@@ -1399,27 +1460,15 @@
           be the first to know when they launch!
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Pilot Wallets" class="w-full h-48 object-cover rounded-lg mb-4">
-            <h3 class="text-xl font-bold mb-3">Pilot Wallets</h3>
-            <p class="text-gray-600">Premium leather wallets with dedicated compartments for licenses, IDs, and flight documents.</p>
-          </div>
-
-          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Logbooks" class="w-full h-48 object-cover rounded-lg mb-4">
+            <img src="https://i.etsystatic.com/35130867/r/il/1f4c60/4067280641/il_1140xN.4067280641_9tgv.jpg" alt="Logbooks" class="w-full h-60 object-cover rounded-lg mb-4">
             <h3 class="text-xl font-bold mb-3">Logbooks</h3>
             <p class="text-gray-600">Professionally designed logbooks with durable covers and organized layouts for flight hours.</p>
           </div>
 
           <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Flight Bags" class="w-full h-48 object-cover rounded-lg mb-4">
-            <h3 class="text-xl font-bold mb-3">Flight Bags</h3>
-            <p class="text-gray-600">Compact, organized bags designed to carry all your essentials for training flights.</p>
-          </div>
-          
-          <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-            <img src="https://images.unsplash.com/photo-1575908539614-ff89490f4a78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Accessories" class="w-full h-48 object-cover rounded-lg mb-4">
+            <img src="https://i.etsystatic.com/47138845/r/il/5d56db/5720752588/il_1140xN.5720752588_6v43.jpg" alt="Accessories" class="w-full h-60 object-cover rounded-lg mb-4">
             <h3 class="text-xl font-bold mb-3">Accessories</h3>
             <p class="text-gray-600">Essential pilot accessories including kneeboard, headset cases, and aviation-themed gifts.</p>
           </div>
@@ -1558,7 +1607,7 @@
               
               <div class="flex flex-col md:flex-row gap-6 items-center my-6">
                 <div class="md:w-1/3">
-                  <img src="https://images.unsplash.com/photo-1540339832862-474599807836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Emirates Aircraft" class="rounded-lg shadow-md">
+                  <img src="https://www.aero-news.net/images/content/commair/2023/Emirates-Phenom-100-1123a.jpg" alt="Emirates Aircraft" class="rounded-lg shadow-md">
                 </div>
                 <div class="md:w-2/3">
                   <h3>Program Overview</h3>
@@ -1622,7 +1671,7 @@
                   </p>
                 </div>
                 <div class="md:w-1/3">
-                  <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Etihad Aircraft" class="rounded-lg shadow-md">
+                  <img src="https://media.assettype.com/gulfnews%2F2024-11-17%2Fy0eswuiz%2FETIHAD_PIC__2_1601983350748_174fda607de_original_ratio.jpg?w=1200&auto=format%2Ccompress" alt="Etihad Aircraft" class="rounded-lg shadow-md">
                 </div>
               </div>
               
@@ -1837,557 +1886,4 @@
           <p class="mb-6">
             Have questions or feedback? We'd love to hear from you!
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Email Us</h3>
-              <p class="mb-2">General Inquiries: <a href="mailto:info@cadetpilothub.com" class="text-blue-600 hover:underline">info@cadetpilothub.com</a></p>
-              <p class="mb-2">Support: <a href="mailto:support@cadetpilothub.com" class="text-blue-600 hover:underline">support@cadetpilothub.com</a></p>
-              <p>Business Opportunities: <a href="mailto:business@cadetpilothub.com" class="text-blue-600 hover:underline">business@cadetpilothub.com</a></p>
-            </div>
-            <div>
-              <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
-              <p class="mb-2">Instagram: <a href="#" class="text-blue-600 hover:underline">@cadetpilothub</a></p>
-              <p class="mb-2">Twitter: <a href="#" class="text-blue-600 hover:underline">@cadetpilothub</a></p>
-              <p>LinkedIn: <a href="#" class="text-blue-600 hover:underline">Cadet Pilot Hub</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer (only once at the end) -->
-  <footer class="bg-gray-800 text-white py-12 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
-        <h3 class="text-xl font-bold mb-4">Cadet Pilot Hub</h3>
-        <p class="text-gray-300">Your journey to the flight deck starts here.</p>
-      </div>
-      <div>
-        <h4 class="font-bold mb-4">Resources</h4>
-        <ul class="space-y-2">
-          <li><a href="#math-preparation" class="text-gray-300 hover:text-white">Math Preparation</a></li>
-          <li><a href="#physics-preparation" class="text-gray-300 hover:text-white">Physics Preparation</a></li>
-          <li><a href="#english-terminology" class="text-gray-300 hover:text-white">English & Terminology</a></li>
-          <li><a href="#interview-qa" class="text-gray-300 hover:text-white">Interview Preparation</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold mb-4">Company</h4>
-        <ul class="space-y-2">
-          <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
-          <li><a href="#blog" class="text-gray-300 hover:text-white">Blog</a></li>
-          <li><a href="#products" class="text-gray-300 hover:text-white">Products</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-      <p>© 2025 Cadet Pilot Hub. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileMenu.style.display === 'flex') {
-        mobileMenu.style.display = 'none';
-      } else {
-        mobileMenu.style.display = 'flex';
-      }
-    }
-    
-    function toggleSimulation(id) {
-      const simulation = document.getElementById(id);
-      if (simulation.style.display === 'block') {
-        simulation.style.display = 'none';
-      } else {
-        // Hide all simulations first
-        const simulations = document.querySelectorAll('.simulation-container');
-        simulations.forEach(sim => {
-          sim.style.display = 'none';
-        });
-        
-        // Show the selected simulation
-        simulation.style.display = 'block';
-        
-        // Initialize the simulation
-        if (id === 'airfoil-simulation') {
-          initAirfoilSimulation();
-        } else if (id === 'forces-simulation') {
-          initForcesSimulation();
-        } else if (id === 'bernoulli-simulation') {
-          initBernoulliSimulation();
-        } else if (id === 'density-simulation') {
-          updateDensitySimulation();
-        }
-      }
-    }
-    
-    // Airfoil Simulation
-    function initAirfoilSimulation() {
-      const canvas = document.getElementById('airfoil-canvas');
-      const ctx = canvas.getContext('2d');
-      
-      // Set canvas dimensions
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-      
-      updateAirfoilSimulation();
-    }
-    
-    function updateAirfoilSimulation() {
-      const angleOfAttack = document.getElementById('angle-of-attack').value;
-      const airspeed = document.getElementById('airspeed').value;
-      
-      // Update display values
-      document.getElementById('angle-value').textContent = angleOfAttack + '°';
-      document.getElementById('airspeed-value').textContent = airspeed + ' knots';
-      
-      // Calculate lift (simplified model)
-      const lift = Math.round((airspeed / 100) * (1 + angleOfAttack / 10) * 500);
-      document.getElementById('lift-value').textContent = lift.toLocaleString() + ' lbs';
-      
-      // Draw the simulation
-      const canvas = document.getElementById('airfoil-canvas');
-      const ctx = canvas.getContext('2d');
-      
-      // Clear canvas
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Draw airfoil
-      const centerY = canvas.height / 2;
-      const startX = canvas.width * 0.2;
-      const endX = canvas.width * 0.8;
-      const chordLength = endX - startX;
-      
-      // Calculate airfoil shape based on angle of attack
-      const angleRad = (angleOfAttack * Math.PI) / 180;
-      const maxCamber = chordLength * 0.1 * (1 + angleOfAttack / 20);
-      
-      ctx.beginPath();
-      ctx.moveTo(startX, centerY);
-      
-      // Top curve
-      for (let x = 0; x <= chordLength; x += 5) {
-        const ratio = x / chordLength;
-        const thickness = chordLength * 0.06 * Math.sin(Math.PI * ratio);
-        const camber = maxCamber * Math.sin(Math.PI * ratio);
-        const y = centerY - thickness - camber;
-        
-        ctx.lineTo(startX + x, y - angleRad * (x - chordLength / 2));
-      }
-      
-      // Bottom curve
-      for (let x = chordLength; x >= 0; x -= 5) {
-        const ratio = x / chordLength;
-        const thickness = chordLength * 0.06 * Math.sin(Math.PI * ratio);
-        const camber = maxCamber * Math.sin(Math.PI * ratio);
-        const y = centerY + thickness - camber;
-        
-        ctx.lineTo(startX + x, y - angleRad * (x - chordLength / 2));
-      }
-      
-      ctx.closePath();
-      ctx.fillStyle = '#3b82f6';
-      ctx.fill();
-      ctx.strokeStyle = '#1e40af';
-      ctx.lineWidth = 2;
-      ctx.stroke();
-      
-      // Draw airflow lines
-      const lineCount = Math.floor(airspeed / 50) + 3;
-      const lineSpacing = canvas.height / (lineCount + 1);
-      
-      ctx.strokeStyle = '#93c5fd';
-      ctx.lineWidth = 1;
-      
-      for (let i = 1; i <= lineCount; i++) {
-        const y = i * lineSpacing;
-        
-        // Determine if this line intersects with the airfoil
-        let intersectsAirfoil = false;
-        if (y > centerY - maxCamber - chordLength * 0.06 && y < centerY + chordLength * 0.06 - maxCamber) {
-          intersectsAirfoil = true;
-        }
-        
-        // Draw line segments
-        if (intersectsAirfoil) {
-          // Draw before airfoil
-          drawFlowLine(ctx, 0, y, startX - 10, y, airspeed);
-          
-          // Draw after airfoil
-          drawFlowLine(ctx, endX + 10, y + angleOfAttack, canvas.width, y + angleOfAttack * 2, airspeed);
-        } else {
-          // Draw continuous line
-          drawFlowLine(ctx, 0, y, canvas.width, y + (y < centerY ? angleOfAttack : 0), airspeed);
-        }
-      }
-    }
-    
-    function drawFlowLine(ctx, startX, startY, endX, endY, speed) {
-      const dashLength = 5 + speed / 50;
-      const gapLength = 5;
-      const dx = endX - startX;
-      const dy = endY - startY;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      const dashCount = Math.floor(distance / (dashLength + gapLength));
-      const dashX = dx / dashCount;
-      const dashY = dy / dashCount;
-      
-      ctx.beginPath();
-      for (let i = 0; i < dashCount; i++) {
-        const x = startX + i * dashX;
-        const y = startY + i * dashY;
-        ctx.moveTo(x, y);
-        ctx.lineTo(x + dashX * dashLength / (dashLength + gapLength), y + dashY * dashLength / (dashLength + gapLength));
-      }
-      ctx.stroke();
-    }
-    
-    // Forces in Flight Simulation
-    function initForcesSimulation() {
-      updateForcesSimulation();
-    }
-    
-    function updateForcesSimulation() {
-      const flightPhase = document.getElementById('flight-phase').value;
-      const aircraftWeight = document.getElementById('aircraft-weight').value;
-      
-      // Update display values
-      document.getElementById('weight-value').textContent = Number(aircraftWeight).toLocaleString() + ' lbs';
-      
-      // Calculate forces based on flight phase and weight
-      let lift, thrust, drag;
-      
-      switch (flightPhase) {
-        case 'cruise':
-          lift = aircraftWeight;
-          thrust = aircraftWeight * 0.2;
-          drag = thrust;
-          break;
-        case 'climb':
-          lift = aircraftWeight * 0.9;
-          thrust = aircraftWeight * 0.3;
-          drag = aircraftWeight * 0.2;
-          break;
-        case 'descent':
-          lift = aircraftWeight * 0.8;
-          thrust = aircraftWeight * 0.1;
-          drag = aircraftWeight * 0.2;
-          break;
-        case 'takeoff':
-          lift = aircraftWeight * 0.7;
-          thrust = aircraftWeight * 0.4;
-          drag = aircraftWeight * 0.3;
-          break;
-        case 'landing':
-          lift = aircraftWeight * 0.9;
-          thrust = aircraftWeight * 0.1;
-          drag = aircraftWeight * 0.4;
-          break;
-      }
-      
-      // Update force values
-      document.getElementById('lift-force').textContent = Math.round(lift).toLocaleString() + ' lbs';
-      document.getElementById('weight-force').textContent = Number(aircraftWeight).toLocaleString() + ' lbs';
-      document.getElementById('thrust-force').textContent = Math.round(thrust).toLocaleString() + ' lbs';
-      document.getElementById('drag-force').textContent = Math.round(drag).toLocaleString() + ' lbs';
-      
-      // Draw the simulation
-      const canvas = document.getElementById('forces-canvas');
-      const ctx = canvas.getContext('2d');
-      
-      // Set canvas dimensions
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-      
-      // Clear canvas
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Draw aircraft
-      const centerX = canvas.width / 2;
-      const centerY = canvas.height / 2;
-      
-      // Determine aircraft angle based on flight phase
-      let aircraftAngle = 0;
-      switch (flightPhase) {
-        case 'climb':
-          aircraftAngle = Math.PI / 12; // 15 degrees up
-          break;
-        case 'descent':
-          aircraftAngle = -Math.PI / 12; // 15 degrees down
-          break;
-        case 'takeoff':
-          aircraftAngle = Math.PI / 15; // 12 degrees up
-          break;
-        case 'landing':
-          aircraftAngle = -Math.PI / 20; // 9 degrees down
-          break;
-      }
-      
-      // Draw aircraft body
-      ctx.save();
-      ctx.translate(centerX, centerY);
-      ctx.rotate(aircraftAngle);
-      
-      // Fuselage
-      ctx.beginPath();
-      ctx.ellipse(0, 0, 100, 20, 0, 0, 2 * Math.PI);
-      ctx.fillStyle = '#3b82f6';
-      ctx.fill();
-      ctx.strokeStyle = '#1e40af';
-      ctx.lineWidth = 2;
-      ctx.stroke();
-      
-      // Wings
-      ctx.beginPath();
-      ctx.moveTo(-20, 0);
-      ctx.lineTo(-70, -10);
-      ctx.lineTo(-60, 0);
-      ctx.lineTo(-70, 10);
-      ctx.closePath();
-      ctx.fillStyle = '#60a5fa';
-      ctx.fill();
-      ctx.stroke();
-      
-      ctx.beginPath();
-      ctx.moveTo(0, 0);
-      ctx.lineTo(0, -5);
-      ctx.lineTo(80, -5);
-      ctx.lineTo(80, 5);
-      ctx.lineTo(0, 5);
-      ctx.closePath();
-      ctx.fill();
-      ctx.stroke();
-      
-      ctx.restore();
-      
-      // Draw force vectors
-      const forceScale = canvas.height / 3 / aircraftWeight;
-      
-      // Lift (up)
-      drawForceVector(ctx, centerX, centerY, 'up', lift * forceScale, 'Lift', '#22c55e');
-      
-      // Weight (down)
-      drawForceVector(ctx, centerX, centerY, 'down', aircraftWeight * forceScale, 'Weight', '#ef4444');
-      
-      // Thrust (forward)
-      const thrustAngle = aircraftAngle;
-      drawForceVector(ctx, centerX, centerY, 'right', thrust * forceScale, 'Thrust', '#f59e0b', thrustAngle);
-      
-      // Drag (backward)
-      const dragAngle = aircraftAngle + Math.PI;
-      drawForceVector(ctx, centerX, centerY, 'left', drag * forceScale, 'Drag', '#8b5cf6', dragAngle);
-    }
-    
-    function drawForceVector(ctx, x, y, direction, length, label, color, angle = 0) {
-      ctx.save();
-      ctx.translate(x, y);
-      
-      if (angle !== 0) {
-        ctx.rotate(angle);
-      } else {
-        switch (direction) {
-          case 'up':
-            ctx.rotate(-Math.PI / 2);
-            break;
-          case 'down':
-            ctx.rotate(Math.PI / 2);
-            break;
-          case 'left':
-            ctx.rotate(Math.PI);
-            break;
-        }
-      }
-      
-      // Draw arrow line
-      ctx.beginPath();
-      ctx.moveTo(0, 0);
-      ctx.lineTo(length, 0);
-      ctx.strokeStyle = color;
-      ctx.lineWidth = 3;
-      ctx.stroke();
-      
-      // Draw arrowhead
-      ctx.beginPath();
-      ctx.moveTo(length, 0);
-      ctx.lineTo(length - 10, -5);
-      ctx.lineTo(length - 10, 5);
-      ctx.closePath();
-      ctx.fillStyle = color;
-      ctx.fill();
-      
-      // Draw label
-      ctx.fillStyle = color;
-      ctx.font = '14px Arial';
-      ctx.textAlign = 'center';
-      ctx.fillText(label, length / 2, -10);
-      
-      ctx.restore();
-    }
-    
-    // Bernoulli's Principle Simulation
-    function initBernoulliSimulation() {
-      updateBernoulliSimulation();
-    }
-    
-    function updateBernoulliSimulation() {
-      const flowSpeed = document.getElementById('flow-speed').value;
-      const tubeConstriction = document.getElementById('tube-constriction').value;
-      
-      // Update display values
-      let speedText;
-      if (flowSpeed <= 3) speedText = 'Low';
-      else if (flowSpeed <= 7) speedText = 'Medium';
-      else speedText = 'High';
-      
-      let constrictionText;
-      if (tubeConstriction <= 2) constrictionText = 'Low';
-      else if (tubeConstriction <= 4) constrictionText = 'Medium';
-      else constrictionText = 'High';
-      
-      document.getElementById('flow-speed-value').textContent = speedText;
-      document.getElementById('constriction-value').textContent = constrictionText;
-      
-      // Calculate pressure and velocity
-      const velocityRatio = tubeConstriction;
-      const pressureRatioA = 10 - velocityRatio;
-      const pressureRatioB = 10 - (velocityRatio * 2);
-      
-      let pressureA, velocityA, pressureB, velocityB;
-      
-      if (pressureRatioA >= 7) pressureA = 'High';
-      else if (pressureRatioA >= 4) pressureA = 'Medium';
-      else pressureA = 'Low';
-      
-      if (pressureRatioB >= 7) pressureB = 'High';
-      else if (pressureRatioB >= 4) pressureB = 'Medium';
-      else pressureB = 'Low';
-      
-      if (velocityRatio <= 2) velocityA = 'Low';
-      else if (velocityRatio <= 4) velocityA = 'Medium';
-      else velocityA = 'High';
-      
-      if (velocityRatio * 2 <= 2) velocityB = 'Low';
-      else if (velocityRatio * 2 <= 4) velocityB = 'Medium';
-      else velocityB = 'High';
-      
-      document.getElementById('pressure-a').textContent = pressureA;
-      document.getElementById('velocity-a').textContent = velocityA;
-      document.getElementById('pressure-b').textContent = pressureB;
-      document.getElementById('velocity-b').textContent = velocityB;
-      
-      // Draw the simulation
-      const canvas = document.getElementById('bernoulli-canvas');
-      const ctx = canvas.getContext('2d');
-      
-      // Set canvas dimensions
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-      
-      // Clear canvas
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Draw tube
-      const tubeHeight = canvas.height / 3;
-      const tubeY = canvas.height / 2 - tubeHeight / 2;
-      const constrictionWidth = canvas.width / 3;
-      const constrictionX = canvas.width / 2 - constrictionWidth / 2;
-      const constrictionFactor = 1 - (tubeConstriction / 10);
-      
-      // Draw tube outline
-      ctx.beginPath();
-      ctx.moveTo(0, tubeY);
-      ctx.lineTo(constrictionX, tubeY);
-      ctx.lineTo(constrictionX, tubeY + tubeHeight * constrictionFactor);
-      ctx.lineTo(constrictionX + constrictionWidth, tubeY + tubeHeight * constrictionFactor);
-      ctx.lineTo(constrictionX + constrictionWidth, tubeY);
-      ctx.lineTo(canvas.width, tubeY);
-      ctx.lineTo(canvas.width, tubeY + tubeHeight);
-      ctx.lineTo(constrictionX + constrictionWidth, tubeY + tubeHeight);
-      ctx.lineTo(constrictionX + constrictionWidth, tubeY + tubeHeight * (2 - constrictionFactor));
-      ctx.lineTo(constrictionX, tubeY + tubeHeight * (2 - constrictionFactor));
-      ctx.lineTo(constrictionX, tubeY + tubeHeight);
-      ctx.lineTo(0, tubeY + tubeHeight);
-      ctx.closePath();
-      
-      ctx.fillStyle = '#f0f9ff';
-      ctx.fill();
-      ctx.strokeStyle = '#3b82f6';
-      ctx.lineWidth = 2;
-      ctx.stroke();
-      
-      // Draw flow particles
-      const particleCount = flowSpeed * 5;
-      const particleSize = 3;
-      
-      ctx.fillStyle = '#60a5fa';
-      
-      for (let i = 0; i < particleCount; i++) {
-        const x = (canvas.width * (i / particleCount) + Date.now() / (100 / flowSpeed)) % canvas.width;
-        let y;
-        
-        // Adjust y position based on tube section
-        if (x < constrictionX || x > constrictionX + constrictionWidth) {
-          // Regular tube section
-          y = tubeY + Math.random() * tubeHeight;
-        } else {
-          // Constricted section
-          y = tubeY + tubeHeight * constrictionFactor + Math.random() * tubeHeight * (1 - constrictionFactor);
-        }
-        
-        ctx.beginPath();
-        ctx.arc(x, y, particleSize, 0, 2 * Math.PI);
-        ctx.fill();
-      }
-      
-      // Label points A and B
-      ctx.font = '16px Arial';
-      ctx.fillStyle = '#1e40af';
-      ctx.textAlign = 'center';
-      
-      // Point A (before constriction)
-      ctx.fillText('A', constrictionX - 30, tubeY + tubeHeight / 2);
-      
-      // Point B (at constriction)
-      ctx.fillText('B', constrictionX + constrictionWidth / 2, tubeY + tubeHeight / 2);
-    }
-    
-    // Density Altitude Simulation
-    function updateDensitySimulation() {
-      const pressureAltitude = document.getElementById('pressure-altitude').value;
-      const temperature = document.getElementById('temperature').value;
-      const humidity = document.getElementById('humidity').value;
-      
-      // Update display values
-      document.getElementById('pressure-alt-value').textContent = Number(pressureAltitude).toLocaleString() + ' ft';
-      document.getElementById('temp-value').textContent = temperature + '°C';
-      document.getElementById('humidity-value').textContent = humidity + '%';
-      
-      // Calculate density altitude (simplified formula)
-      // DA = PA + (120 * (OAT - ISA))
-      // where ISA = 15 - (1.98 * PA / 1000)
-      const isa = 15 - (1.98 * pressureAltitude / 1000);
-      let densityAltitude = Number(pressureAltitude) + (120 * (temperature - isa));
-      
-      // Add humidity effect (simplified)
-      densityAltitude += (humidity / 100) * 500;
-      
-      // Round to nearest 100 ft
-      densityAltitude = Math.round(densityAltitude / 100) * 100;
-      
-      document.getElementById('density-altitude').textContent = densityAltitude.toLocaleString() + ' ft';
-      
-      // Calculate performance impacts
-      const altitudeDifference = densityAltitude - pressureAltitude;
-      const takeoffImpact = Math.round(altitudeDifference / pressureAltitude * 100);
-      const climbImpact = Math.round(altitudeDifference / pressureAltitude * 80);
-      const powerImpact = Math.round(altitudeDifference / pressureAltitude * 60);
-      
-      document.getElementById('takeoff-impact').textContent = 'Increased by ' + takeoffImpact + '%';
-      document.getElementById('climb-impact').textContent = 'Decreased by ' + climbImpact + '%';
-      document.getElementById('power-impact').textContent = 'Decreased by ' + powerImpact + '%';
-    }
-  </script>
-</body>
-</html>
+          <div class="grid grid-cols-1 md:gri
