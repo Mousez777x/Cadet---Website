@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
     :root {
       --primary-color: #0c3b6b;
@@ -25,7 +25,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 600;
     }
     
@@ -600,15 +600,17 @@
       <!-- Hero Section with Professional Design -->
       <div class="hero-section py-20 text-center px-4">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-5xl font-bold mb-4">Turning Cadet Dreams into Captain Realities</h2>
-          <p class="text-xl mb-8 max-w-3xl mx-auto">Your journey to the flight deck starts here. Comprehensive pilot assessments, guidance, and resources — built specifically for cadet pilots in the UAE & Middle East.</p>
-          <div class="space-x-4">
-            <a href="#resources" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 inline-block transition duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
-              Explore Resources
-            </a>
-            <a href="#shop" class="bg-white text-blue-800 px-8 py-3 rounded-full hover:bg-gray-100 inline-block transition duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
-              Visit Shop
-            </a>
+          <div class="bg-black bg-opacity-50 p-8 rounded-lg inline-block">
+            <h2 class="text-5xl font-bold mb-4">Turning Cadet Dreams into Captain Realities</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Your journey to the flight deck starts here. Comprehensive pilot assessments, guidance, and resources — built specifically for cadet pilots in the UAE & Middle East.</p>
+            <div class="space-x-4">
+              <a href="#resources" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 inline-block transition duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                Explore Resources
+              </a>
+              <a href="#shop" class="bg-white text-blue-800 px-8 py-3 rounded-full hover:bg-gray-100 inline-block transition duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                Visit Shop
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -659,7 +661,7 @@
             <a href="#math-preparation" class="text-blue-600 hover:underline font-medium">Learn more →</a>
           </div>
           <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition duration-300 card-hover">
-            <img src="https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Physics Preparation" class="w-full h  alt="Physics Preparation" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <img src="https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Physics Preparation" class="w-full h-48 object-cover rounded-t-lg mb-4">
             <h4 class="font-semibold text-xl mb-3">Physics Preparation</h4>
             <p class="text-gray-600 mb-4">Forces, motion, energy, and aerodynamics — all relevant to aviation physics.</p>
             <a href="#physics-preparation" class="text-blue-600 hover:underline font-medium">Learn more →</a>
@@ -678,30 +680,16 @@
         <h3 class="text-3xl font-bold mb-6">Pilot Shop</h3>
         <p class="text-lg mb-8 max-w-3xl mx-auto">Premium aviation gear designed specifically for cadet pilots. Quality products to support your journey from training to the flight deck.</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-8">
           <div class="shop-category bg-white p-6 rounded-lg shadow-lg">
-            <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Pilot Wallets" class="w-full h-40 object-cover rounded-lg mb-4">
-            <h4 class="font-semibold text-lg mb-2">Pilot Wallets</h4>
-            <p class="text-sm text-gray-600 mb-3">Premium leather wallets with dedicated compartments for licenses and IDs.</p>
-            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Coming Soon</span>
-          </div>
-          
-          <div class="shop-category bg-white p-6 rounded-lg shadow-lg">
-            <img src="https://i.etsystatic.com/35130867/r/il/1f4c60/4067280641/il_1140xN.4067280641_9tgv.jpg" alt="Logbooks" class="w-full h-40 object-cover rounded-lg mb-4">
+            <img src="https://i.etsystatic.com/35130867/r/il/1f4c60/4067280641/il_1140xN.4067280641_9tgv.jpg" alt="Logbooks" class="w-full h-60 object-cover rounded-lg mb-4">
             <h4 class="font-semibold text-lg mb-2">Logbooks</h4>
             <p class="text-sm text-gray-600 mb-3">Professional logbooks with durable covers and organized layouts.</p>
             <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Coming Soon</span>
           </div>
           
           <div class="shop-category bg-white p-6 rounded-lg shadow-lg">
-            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Flight Bags" class="w-full h-40 object-cover rounded-lg mb-4">
-            <h4 class="font-semibold text-lg mb-2">Flight Bags</h4>
-            <p class="text-sm text-gray-600 mb-3">Compact, organized bags designed for training flights.</p>
-            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Coming Soon</span>
-          </div>
-          
-          <div class="shop-category bg-white p-6 rounded-lg shadow-lg">
-            <img src="https://images.unsplash.com/photo-1575908539614-ff89490f4a78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Accessories" class="w-full h-40 object-cover rounded-lg mb-4">
+            <img src="https://i.etsystatic.com/47138845/r/il/5d56db/5720752588/il_794xN.5720752588_6v43.jpg" alt="Accessories" class="w-full h-60 object-cover rounded-lg mb-4">
             <h4 class="font-semibold text-lg mb-2">Accessories</h4>
             <p class="text-sm text-gray-600 mb-3">Essential pilot accessories including kneeboards and headset cases.</p>
             <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Coming Soon</span>
@@ -786,288 +774,489 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="pt-16">
+    <!-- Math Preparation Section -->
+    <section id="math-preparation" class="pt-16">
       <div class="section-header text-white py-16 px-6 text-center">
-        <h1 class="text-4xl font-bold mb-4">About Us</h1>
+        <h1 class="text-4xl font-bold mb-4">Math Preparation</h1>
         <p class="text-xl max-w-3xl mx-auto">
-          Learn more about Cadet Pilot Hub and our mission
+          Master the mathematical concepts essential for cadet pilot assessments
         </p>
       </div>
 
       <div class="py-16 px-6 max-w-6xl mx-auto">
         <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
-          <div class="mb-6">
-            <h2 class="text-3xl font-bold mb-6">Our Story</h2>
-            <p class="mb-4">
-              Cadet Pilot Hub was founded in 2023 by a group of passionate aviators who believe every cadet deserves support on their journey to the skies. Having gone through the cadet selection process themselves, our founders understand the challenges and requirements of becoming a pilot in this competitive industry.
-            </p>
-            <p class="mb-4">
-              They created Cadet Pilot Hub to provide the guidance and resources they wish they had when they were starting their aviation journeys. Our team includes experienced pilots, flight instructors, and aviation professionals who are committed to helping the next generation of pilots succeed.
-            </p>
-            <p>
-              Today, Cadet Pilot Hub serves thousands of aspiring pilots, providing them with the knowledge, skills, and confidence they need to succeed in their assessments and begin their careers in aviation.
-            </p>
+          <h2 class="text-3xl font-bold mb-6">Introduction to Math for Pilot Assessments</h2>
+          <div class="flex flex-col md:flex-row gap-8 items-center mb-6">
+            <div class="md:w-2/3">
+              <p class="mb-4">
+                Mathematical aptitude is a critical component of pilot assessments. Airlines test these skills because pilots must perform calculations related to fuel consumption, weight and balance, navigation, and more. The math tested in cadet assessments typically focuses on:
+              </p>
+              <ul class="list-disc pl-5 space-y-2 mb-6">
+                <li>Mental arithmetic (without calculators)</li>
+                <li>Problem-solving under time pressure</li>
+                <li>Application of formulas in practical scenarios</li>
+                <li>Logical reasoning and spatial awareness</li>
+              </ul>
+              <p>
+                This section provides comprehensive preparation for all mathematical concepts commonly tested in cadet pilot assessments. We'll cover key topics, provide example problems, and offer practice questions to help you build confidence and speed.
+              </p>
+            </div>
+            <div class="md:w-1/3">
+              <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Math Preparation" class="rounded-lg shadow-md">
+            </div>
           </div>
         </div>
 
+        <!-- Algebra and Equations -->
         <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
-          <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+          <h2 class="text-2xl font-bold mb-6">1. Algebra and Equations</h2>
+          
+          <h3 class="text-xl font-semibold mb-4">Linear Equations</h3>
           <p class="mb-4">
-            Our mission is to empower aspiring pilots with the knowledge, resources, and support they need to successfully navigate the cadet pilot selection process and build rewarding careers in aviation.
+            Linear equations are frequently used in aviation for calculations involving speed, distance, and time. The standard form is:
           </p>
-          <p>
-            We believe that with the right preparation and guidance, anyone with passion and dedication can achieve their dream of becoming a pilot, regardless of their background or prior experience.
+          <div class="math-formula">ax + b = c</div>
+          <p class="mb-4">Where:</p>
+          <ul class="list-disc pl-5 space-y-1 mb-6">
+            <li>a, b, and c are constants</li>
+            <li>x is the variable we're solving for</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft burns 2,500 kg of fuel per hour. If the flight is scheduled for 3.5 hours and the aircraft needs to land with at least 2,000 kg of reserve fuel, what is the minimum amount of fuel needed before takeoff?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Let's set up the equation:</p>
+            <p class="mb-2">Fuel needed = Fuel consumption × Flight time + Reserve fuel</p>
+            <p class="mb-2">Fuel needed = 2,500 kg/hr × 3.5 hr + 2,000 kg</p>
+            <p class="mb-2">Fuel needed = 8,750 kg + 2,000 kg</p>
+            <p class="mb-2">Fuel needed = 10,750 kg</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Quadratic Equations</h3>
+          <p class="mb-4">
+            Quadratic equations appear in problems involving acceleration, deceleration, and curved flight paths. The standard form is:
           </p>
+          <div class="math-formula">ax² + bx + c = 0</div>
+          <p class="mb-4">
+            These can be solved using the quadratic formula:
+          </p>
+          <div class="math-formula">x = (-b ± √(b² - 4ac)) / 2a</div>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft accelerates at a rate of 2 m/s². If it starts from rest, how long will it take to reach a takeoff speed of 80 m/s?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Using the equation: v = u + at</p>
+            <p class="mb-2">Where v is final velocity, u is initial velocity, a is acceleration, and t is time.</p>
+            <p class="mb-2">80 m/s = 0 m/s + 2 m/s² × t</p>
+            <p class="mb-2">80 = 2t</p>
+            <p class="mb-2">t = 40 seconds</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> An aircraft flies at 450 knots for 2 hours, then increases its speed by 50 knots for the next 1.5 hours. What is the total distance covered?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">1,575 nautical miles</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> If an aircraft descends from 30,000 feet to 10,000 feet at a constant rate of 1,500 feet per minute, how long will the descent take?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">13.33 minutes (or 13 minutes and 20 seconds)</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> An aircraft has a fuel capacity of 5,000 kg. If it burns fuel at a rate of 800 kg per hour during cruise and 1,200 kg per hour during climb and descent, how long can it cruise if climb and descent together take 45 minutes?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">5.375 hours (5 hours and 22.5 minutes)</span></p>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <div class="text-4xl text-blue-600 mb-4">
-              <i class="fas fa-graduation-cap"></i>
+        <!-- Speed, Distance, and Time -->
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+          <h2 class="text-2xl font-bold mb-6">2. Speed, Distance, and Time Calculations</h2>
+          
+          <p class="mb-4">
+            Speed, distance, and time calculations are fundamental to aviation. Pilots must constantly calculate these values for navigation, fuel planning, and arrival estimates.
+          </p>
+          
+          <h3 class="text-xl font-semibold mb-4">Key Formulas</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Speed = Distance ÷ Time</div>
             </div>
-            <h3 class="text-xl font-bold mb-3">Expert Knowledge</h3>
-            <p>Our content is created by experienced pilots and aviation professionals who understand what it takes to succeed.</p>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Distance = Speed × Time</div>
+            </div>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Time = Distance ÷ Speed</div>
+            </div>
           </div>
           
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <div class="text-4xl text-blue-600 mb-4">
-              <i class="fas fa-users"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Community Support</h3>
-            <p>Join a community of like-minded individuals who share your passion for aviation and can support your journey.</p>
+          <h3 class="text-xl font-semibold mb-4">Aviation-Specific Units</h3>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Speed:</strong> Knots (nautical miles per hour)</li>
+            <li><strong>Distance:</strong> Nautical miles (NM)</li>
+            <li><strong>Time:</strong> Hours, minutes</li>
+          </ul>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft is flying at a ground speed of 420 knots. How long will it take to cover a distance of 1,050 nautical miles?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Time = Distance ÷ Speed</p>
+            <p class="mb-2">Time = 1,050 NM ÷ 420 knots</p>
+            <p class="mb-2">Time = 2.5 hours (2 hours and 30 minutes)</p>
           </div>
           
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <div class="text-4xl text-blue-600 mb-4">
-              <i class="fas fa-chart-line"></i>
+          <h3 class="text-xl font-semibold mb-4 mt-8">Headwind and Tailwind Calculations</h3>
+          <p class="mb-4">
+            Wind significantly affects an aircraft's ground speed. With a headwind, ground speed decreases; with a tailwind, it increases.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Ground Speed = Air Speed - Headwind</div>
             </div>
-            <h3 class="text-xl font-bold mb-3">Proven Results</h3>
-            <p>Our resources have helped hundreds of cadets successfully pass their assessments and begin their pilot careers.</p>
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <div class="math-formula">Ground Speed = Air Speed + Tailwind</div>
+            </div>
+          </div>
+          
+          <div class="example-box">
+            <h4 class="font-semibold mb-2">Example:</h4>
+            <p class="mb-2">An aircraft has a true airspeed of 480 knots. If it encounters a 40-knot headwind, what will be its ground speed? How long will it take to cover 960 nautical miles?</p>
+            <p class="mb-2"><strong>Solution:</strong></p>
+            <p class="mb-2">Ground Speed = Air Speed - Headwind</p>
+            <p class="mb-2">Ground Speed = 480 knots - 40 knots = 440 knots</p>
+            <p class="mb-2">Time = Distance ÷ Ground Speed</p>
+            <p class="mb-2">Time = 960 NM ÷ 440 knots = 2.18 hours (2 hours and 11 minutes)</p>
+          </div>
+          
+          <h3 class="text-xl font-semibold mb-4 mt-8">Practice Questions</h3>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 1:</strong> An aircraft flies from Dubai to Riyadh, a distance of 540 NM, at a ground speed of 360 knots. It then flies from Riyadh to Jeddah, a distance of 620 NM, at a ground speed of 400 knots. What is the total flight time?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">3.05 hours (3 hours and 3 minutes)</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 2:</strong> An aircraft has a true airspeed of 500 knots. If the flight from Abu Dhabi to Muscat (a distance of 220 NM) takes 30 minutes, what is the wind component (headwind or tailwind)?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">60-knot tailwind</span></p>
+          </div>
+          
+          <div class="practice-question">
+            <p class="mb-2"><strong>Question 3:</strong> An aircraft needs to arrive at its destination in exactly 2 hours. The distance is 900 NM, and there's a 50-knot headwind. What true airspeed must the pilot maintain?</p>
+            <p class="mt-4"><strong>Answer:</strong> <span class="answer-reveal">500 knots</span></p>
+          </div>
+        </div>
+
+        <!-- Additional Resources with Practice Test (Removed Video Tutorials) -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-6">Additional Math Resources</h2>
+          
+          <div class="test-container">
+            <h3 class="text-xl font-semibold mb-6">Practice Test</h3>
+            <p class="mb-6">Test your knowledge with our comprehensive practice test, designed to simulate the math section of cadet pilot assessments.</p>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 1: An aircraft is flying at a true airspeed of 480 knots with a 30-knot tailwind. If the distance to the destination is 1,275 nautical miles, how long will the flight take?</p>
+              <label class="test-option">
+                <input type="radio" name="q1" value="a"> a) 2 hours 30 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q1" value="b"> b) 2 hours 40 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q1" value="c"> c) 2 hours 45 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q1" value="d"> d) 2 hours 50 minutes
+              </label>
+            </div>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 2: An aircraft has a fuel capacity of 6,800 kg. If it burns fuel at a rate of 1,700 kg per hour, what percentage of its fuel capacity will it use during a 3-hour flight?</p>
+              <label class="test-option">
+                <input type="radio" name="q2" value="a"> a) 65%
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q2" value="b"> b) 70%
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q2" value="c"> c) 75%
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q2" value="d"> d) 80%
+              </label>
+            </div>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 3: An aircraft climbs at a rate of 1,200 feet per minute. How long will it take to climb from 5,000 feet to 28,000 feet?</p>
+              <label class="test-option">
+                <input type="radio" name="q3" value="a"> a) 19 minutes 10 seconds
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q3" value="b"> b) 19 minutes 30 seconds
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q3" value="c"> c) 20 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q3" value="d"> d) 23 minutes
+              </label>
+            </div>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 4: The ratio of passengers to crew on a flight is 32:4. If there are 256 passengers, how many crew members are on board?</p>
+              <label class="test-option">
+                <input type="radio" name="q4" value="a"> a) 28
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q4" value="b"> b) 30
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q4" value="c"> c) 32
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q4" value="d"> d) 36
+              </label>
+            </div>
+            
+            <div class="test-question">
+              <p class="font-semibold mb-3">Question 5: An aircraft flies from point A to point B at 400 knots, then returns from B to A at 350 knots. If the distance between A and B is 700 nautical miles, what is the total flight time?</p>
+              <label class="test-option">
+                <input type="radio" name="q5" value="a"> a) 3 hours 30 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q5" value="b"> b) 3 hours 45 minutes
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q5" value="c"> c) 4 hours
+              </label>
+              <label class="test-option">
+                <input type="radio" name="q5" value="d"> d) 4 hours 15 minutes
+              </label>
+            </div>
+            
+            <button class="test-button mt-6" onclick="alert('Correct answers: 1-c, 2-c, 3-a, 4-c, 5-b')">
+              Check Answers
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
-        <p class="text-lg text-center mb-12 max-w-3xl mx-auto">
-          Have questions or feedback? We'd love to hear from you! Fill out the form below and our team will get back to you as soon as possible.
+    <!-- Physics Preparation Section -->
+    <section id="physics-preparation" class="pt-16">
+      <div class="section-header text-white py-16 px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Physics Preparation</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Understanding the physics principles that make flight possible
         </p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
-            <form class="contact-form">
-              <div class="mb-4">
-                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                <input type="text" id="name" placeholder="Your name">
+      </div>
+
+      <div class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+          <h2 class="text-3xl font-bold mb-6">Introduction to Aviation Physics</h2>
+          <div class="flex flex-col md:flex-row gap-8 items-center mb-6">
+            <div class="md:w-2/3">
+              <p class="mb-4">
+                Physics is fundamental to understanding how aircraft fly and operate. Cadet pilot assessments test your knowledge of basic physics principles and their application to aviation. This section covers the key physics concepts you need to master for your assessments.
+              </p>
+              <p>
+                We'll explore forces and motion, energy and power, basic aerodynamics, pressure and atmosphere, and practical applications in flight. Each topic includes explanations, formulas, examples, and practice questions to help you prepare thoroughly.
+              </p>
+            </div>
+            <div class="md:w-1/3">
+              <img src="https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Physics Preparation" class="rounded-lg shadow-md">
+            </div>
+          </div>
+        </div>
+
+        <!-- Physics Formula Sheet for Student Pilot Pre-assessment -->
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+          <h2 class="text-2xl font-bold mb-6">Physics Formula Sheet for Cadet Pilot Pre-assessment</h2>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Forces and Motion</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Newton's Second Law:</p>
+                <div class="math-formula">F = ma</div>
+                <p class="text-sm mt-1">Force (N) = mass (kg) × acceleration (m/s²)</p>
               </div>
-              <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input type="email" id="email" placeholder="Your email">
+              <div>
+                <p class="font-semibold">Weight:</p>
+                <div class="math-formula">W = mg</div>
+                <p class="text-sm mt-1">Weight (N) = mass (kg) × gravitational acceleration (9.8 m/s²)</p>
               </div>
-              <div class="mb-4">
-                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                <input type="text" id="subject" placeholder="Subject">
-              </div>
-              <div class="mb-6">
-                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea id="message" rows="5" placeholder="Your message"></textarea>
-              </div>
-              <button type="submit">Send Message</button>
-            </form>
+            </div>
           </div>
           
-          <div>
-            <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
-              <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-              <div class="space-y-4">
-                <div class="flex items-start">
-                  <div class="text-blue-600 mr-3 mt-1">
-                    <i class="fas fa-envelope"></i>
+          <div class="formula-sheet">
+            <p class="formula-category">Aerodynamics</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Lift Equation:</p>
+                <div class="math-formula">L = CL × ½ × ρ × V² × S</div>
+                <p class="text-sm mt-1">L = lift (N), CL = lift coefficient, ρ = air density (kg/m³), V = velocity (m/s), S = wing area (m²)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Drag Equation:</p>
+                <div class="math-formula">D = CD × ½ × ρ × V² × S</div>
+                <p class="text-sm mt-1">D = drag (N), CD = drag coefficient, ρ = air density (kg/m³), V = velocity (m/s), S = wing area (m²)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Energy and Power</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Kinetic Energy:</p>
+                <div class="math-formula">KE = ½ × m × v²</div>
+                <p class="text-sm mt-1">KE = kinetic energy (J), m = mass (kg), v = velocity (m/s)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Potential Energy:</p>
+                <div class="math-formula">PE = m × g × h</div>
+                <p class="text-sm mt-1">PE = potential energy (J), m = mass (kg), g = 9.8 m/s², h = height (m)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Power:</p>
+                <div class="math-formula">P = F × v</div>
+                <p class="text-sm mt-1">P = power (W), F = force (N), v = velocity (m/s)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Pressure and Atmosphere</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <p class="font-semibold">Pressure:</p>
+                <div class="math-formula">P = F ÷ A</div>
+                <p class="text-sm mt-1">P = pressure (Pa), F = force (N), A = area (m²)</p>
+              </div>
+              <div>
+                <p class="font-semibold">Standard Atmospheric Pressure:</p>
+                <div class="math-formula">1013.25 hPa = 29.92 inHg</div>
+                <p class="text-sm mt-1">At sea level</p>
+              </div>
+              <div>
+                <p class="font-semibold">Pressure Decrease with Altitude:</p>
+                <div class="math-formula">~1 inHg per 1,000 ft</div>
+                <p class="text-sm mt-1">Approximate rule of thumb</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formula-sheet">
+            <p class="formula-category">Speed, Distance, and Time</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <p class="font-semibold">Speed:</p>
+                <div class="math-formula">v = d ÷ t</div>
+                <p class="text-sm mt-1">v = speed, d = distance, t = time</p>
+              </div>
+              <div>
+                <p class="font-semibold">Distance:</p>
+                <div class="math-formula">d = v × t</div>
+                <p class="text-sm mt-1">d = distance, v = speed, t = time</p>
+              </div>
+              <div>
+                <p class="font-semibold">Time:</p>
+                <div class="math-formula">t = d ÷ v</div>
+                <p class="text-sm mt-1">t = time, d = distance, v = speed</p>
+              </div>
+              <div>
+                <p class="font-semibold">Ground Speed with Wind:</p>
+                <div class="math-formula">GS = TAS ± Wind</div>
+                <p class="text-sm mt-1">GS = ground speed, TAS = true airspeed, + for tailwind, - for headwind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Physics Simulations -->
+        <div class="bg-blue-50 p-8 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-6">Interactive Physics Simulations</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="simulation-box">
+              <h3 class="text-xl font-semibold mb-4">Airfoil Lift Simulation</h3>
+              <img src="https://images.unsplash.com/photo-1534481016308-0fca71578ae5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Airfoil Simulation" class="simulation-image">
+              <p class="mb-4">This interactive simulation demonstrates how airflow around an airfoil generates lift. Adjust the angle of attack and airspeed to see how they affect lift production.</p>
+              <button class="test-button" onclick="toggleSimulation('airfoil-simulation')">Launch Simulation</button>
+              
+              <div id="airfoil-simulation" class="simulation-container">
+                <div class="simulation-controls">
+                  <div class="simulation-control">
+                    <label for="angle-of-attack">Angle of Attack (°)</label>
+                    <input type="range" id="angle-of-attack" min="0" max="20" value="5" oninput="updateAirfoilSimulation()">
+                    <span id="angle-value">5°</span>
                   </div>
-                  <div>
-                    <p class="font-semibold">Email:</p>
-                    <p>info@cadetpilothub.com</p>
+                  <div class="simulation-control">
+                    <label for="airspeed">Airspeed (knots)</label>
+                    <input type="range" id="airspeed" min="100" max="500" value="250" step="10" oninput="updateAirfoilSimulation()">
+                    <span id="airspeed-value">250 knots</span>
                   </div>
                 </div>
-                <div class="flex items-start">
-                  <div class="text-blue-600 mr-3 mt-1">
-                    <i class="fas fa-phone"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold">Phone:</p>
-                    <p>+971 50 123 4567</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="text-blue-600 mr-3 mt-1">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold">Location:</p>
-                    <p>Dubai, United Arab Emirates</p>
-                  </div>
+                <canvas id="airfoil-canvas" class="simulation-canvas"></canvas>
+                <div class="mt-4">
+                  <p><strong>Lift Generated:</strong> <span id="lift-value">1,250 lbs</span></p>
+                  <p class="mt-2 text-sm text-gray-600">Note: This simulation is a simplified model for educational purposes. Actual lift calculations involve more complex factors.</p>
                 </div>
               </div>
             </div>
             
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-              <h3 class="text-2xl font-bold mb-6">Follow Us</h3>
-              <p class="mb-6">Stay connected with us on social media for the latest updates, tips, and resources.</p>
-              <div class="social-icons">
-                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <div class="simulation-box">
+              <h3 class="text-xl font-semibold mb-4">Forces in Flight Simulation</h3>
+              <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Forces in Flight" class="simulation-image">
+              <p class="mb-4">Explore how the four forces of flight (lift, weight, thrust, and drag) interact during different phases of flight. Modify aircraft parameters to see their effects on performance.</p>
+              <button class="test-button" onclick="toggleSimulation('forces-simulation')">Launch Simulation</button>
+              
+              <div id="forces-simulation" class="simulation-container">
+                <div class="simulation-controls">
+                  <div class="simulation-control">
+                    <label for="flight-phase">Flight Phase</label>
+                    <select id="flight-phase" onchange="updateForcesSimulation()">
+                      <option value="cruise">Cruise</option>
+                      <option value="climb">Climb</option>
+                      <option value="descent">Descent</option>
+                      <option value="takeoff">Takeoff</option>
+                      <option value="landing">Landing</option>
+                    </select>
+                  </div>
+                  <div class="simulation-control">
+                    <label for="aircraft-weight">Aircraft Weight (lbs)</label>
+                    <input type="range" id="aircraft-weight" min="10000" max="100000" value="50000" step="5000" oninput="updateForcesSimulation()">
+                    <span id="weight-value">50,000 lbs</span>
+                  </div>
+                </div>
+                <canvas id="forces-canvas" class="simulation-canvas"></canvas>
+                <div class="mt-4 grid grid-cols-2 gap-4">
+                  <p><strong>Lift:</strong> <span id="lift-force">50,000 lbs</span></p>
+                  <p><strong>Weight:</strong> <span id="weight-force">50,000 lbs</span></p>
+                  <p><strong>Thrust:</strong> <span id="thrust-force">10,000 lbs</span></p>
+                  <p><strong>Drag:</strong> <span id="drag-force">10,000 lbs</span></p>
+                </div>
               </div>
-              <p class="text-sm text-gray-500 mt-4">Social media accounts coming soon!</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="py-16 bg-blue-600 text-white">
-      <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
-        <p class="text-xl mb-8 max-w-3xl mx-auto">
-          Subscribe to our newsletter for the latest resources, tips, and updates on cadet pilot programs.
-        </p>
-        <form class="max-w-md mx-auto flex flex-col md:flex-row">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="w-full p-3 rounded-l border border-white mb-2 md:mb-0 focus:outline-none text-gray-800"
-            required
-          />
-          <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-r hover:bg-gray-100 transition duration-300 font-semibold">
-            Subscribe
-          </button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-        <div>
-          <h3 class="text-xl font-bold mb-4">Cadet Pilot Hub</h3>
-          <p class="text-gray-300 mb-4">Turning Cadet Dreams into Captain Realities.</p>
-          <div class="social-icons">
-            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        
-        <div>
-          <h4 class="font-bold mb-4">Quick Links</h4>
-          <ul class="space-y-2">
-            <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
-            <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
-            <li><a href="#shop" class="text-gray-300 hover:text-white">Shop</a></li>
-            <li><a href="#resources" class="text-gray-300 hover:text-white">Resources</a></li>
-            <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="font-bold mb-4">Resources</h4>
-          <ul class="space-y-2">
-            <li><a href="#math-preparation" class="text-gray-300 hover:text-white">Math Preparation</a></li>
-            <li><a href="#physics-preparation" class="text-gray-300 hover:text-white">Physics Preparation</a></li>
-            <li><a href="#english-terminology" class="text-gray-300 hover:text-white">Aviation English</a></li>
-            <li><a href="#interview-qa" class="text-gray-300 hover:text-white">Interview Preparation</a></li>
-            <li><a href="#blog" class="text-gray-300 hover:text-white">Blog & Articles</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="font-bold mb-4">Contact</h4>
-          <ul class="space-y-2">
-            <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@cadetpilothub.com</li>
-            <li class="flex items-center"><i class="fas fa-phone mr-2"></i> +971 50 123 4567</li>
-            <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Dubai, UAE</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-700 pt-8 text-center">
-        <p class="mb-4">© 2025 Cadet Pilot Hub. All rights reserved.</p>
-        <div class="flex justify-center space-x-4">
-          <a href="#terms" class="hover:text-gray-300">Terms of Service</a>
-          <a href="#privacy" class="hover:text-gray-300">Privacy Policy</a>
-          <a href="#contact" class="hover:text-gray-300">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById('mobile-menu');
-      mobileMenu.classList.toggle('hidden');
-    }
-
-    function toggleLoginModal() {
-      const loginModal = document.getElementById('login-modal');
-      loginModal.style.display = loginModal.style.display === 'flex' ? 'none' : 'flex';
-    }
-
-    function switchTab(tabName) {
-      const loginTab = document.getElementById('login-tab');
-      const signupTab = document.getElementById('signup-tab');
-      const loginForm = document.getElementById('login-form');
-      const signupForm = document.getElementById('signup-form');
-
-      if (tabName === 'login') {
-        loginTab.classList.add('border-blue-500');
-        loginTab.classList.remove('text-gray-500');
-        signupTab.classList.remove('border-blue-500');
-        signupTab.classList.add('text-gray-500');
-        loginForm.classList.remove('hidden');
-        signupForm.classList.add('hidden');
-      } else {
-        signupTab.classList.add('border-blue-500');
-        signupTab.classList.remove('text-gray-500');
-        loginTab.classList.remove('border-blue-500');
-        loginTab.classList.add('text-gray-500');
-        signupForm.classList.remove('hidden');
-        loginForm.classList.add('hidden');
-      }
-    }
-
-    // Add active class to nav links based on scroll position
-    window.addEventListener('scroll', function() {
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.nav-link');
-      
-      let currentSection = '';
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (pageYOffset >= sectionTop - 200) {
-          currentSection = section.getAttribute('id');
-        }
-      });
-      
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').substring(1) === currentSection) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+            
+            <div class="simulation-box">
+              <h3 class="text-xl font-semibold mb-4">Bernoulli's Principle Demonstration</h3>
+              <img src="https://images.unsplash.com/photo-1579438791781-cb8ea4e35ba7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Bernoulli's Principle" class="simulation-image">
+              <p class="mb-4">This simulation visually demonstrates Bernoulli's principle, showing how fluid velocity affects pressure. See how this principle applies to aircraft wings and lift generation.</p>
+              <button class="test-button" onclick="toggleSimulation('bernoulli-simulation')">Launch Simulation</button>
+              
+              <div id="bernoulli-simulation" class="simulation-container">
+                <div class="simulation-controls">
+                  <div class="simulation-control">
+                    <label for="flow-speed">Flow Speed</label>
+                    <input type="range" id="flow-speed" min="1" max="10" value="5" oninput="updateBernoulliSimulation()">
+                    <span id="flow-speed-value">Medium</span>
+                  </div>
+                  <div class="simulation-control">
+                    <label for="tube-constriction">Tube Constriction</label>
+                    <input type="rang
