@@ -609,7 +609,7 @@
         <span>Published: April 15, 2025</span>
         <span>8 min read</span>
       </div>
-      <img src="https://wallpapercave.com/wp/wp13815864.jpg" alt="UAE Cadet Programs" class="w-full h-64 object-cover rounded-lg mb-6">
+      <img src="https://images.pexels.com/photos/5785741/pexels-photo-5785741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="UAE Cadet Programs" class="w-full h-64 object-cover rounded-lg mb-6">
       
       <div class="blog-content">
         <p>Becoming a cadet pilot with a major UAE airline is a dream for many aspiring aviators. The UAE is home to some of the world's most prestigious airlines, including Emirates, Etihad Airways, and Air Arabia, all of which offer excellent cadet pilot programs. This comprehensive guide will walk you through the application process step by step.</p>
@@ -1106,7 +1106,7 @@
         <div class="max-w-5xl mx-auto">
           <div class="bg-black bg-opacity-50 p-8 rounded-lg inline-block">
             <h2 class="text-5xl font-bold mb-4">Turning Cadet Dreams into Captain Realities</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Your journey to the flight deck starts here. Comprehensive pilot assessments, guidance, and resources — built specifically for cadet pilots in the UAE & Middle East.</p>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Your journey to the flight deck starts here — built specifically for cadet pilots in the UAE & Middle East.</p>
             <div class="space-x-4">
               <a href="#resources" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 inline-block transition duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
                 Explore Resources
@@ -1198,14 +1198,6 @@
             <p class="text-sm text-gray-600 mb-3">Essential pilot accessories including kneeboards and headset cases.</p>
             <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Coming Soon</span>
           </div>
-          
-          <div class="shop-category bg-white p-6 rounded-lg shadow-lg">
-            <img src="https://m.media-amazon.com/images/I/71Ik5AvAVaL._AC_UF1000,1000_QL80_.jpg" alt="Flight Bags" class="w-full h-60 object-cover rounded-lg mb-4">
-            <h4 class="font-semibold text-lg mb-2">Flight Bags</h4>
-            <p class="text-sm text-gray-600 mb-3">Durable and practical flight bags for all your aviation needs.</p>
-            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Coming Soon</span>
-          </div>
-        </div>
         
         <div class="mt-12">
           <a href="#shop-all" class="btn-primary inline-block">View All Products</a>
@@ -1226,7 +1218,6 @@
               <h4 class="font-semibold text-xl mb-2">How to Apply for UAE Cadet Programs</h4>
               <p class="text-gray-600 mb-4">A comprehensive step-by-step guide to applying for cadet pilot programs at major UAE airlines including Emirates, Etihad Airways, and Air Arabia.</p>
               <button onclick="openArticle('uae-cadet-programs-article')" class="text-blue-600 hover:underline font-medium">Read more →</button>
-              class="text-blue-600 hover:underline font-medium">Read more →</button>
             </div>
           </div>
         </div>
@@ -2193,7 +2184,19 @@
           <div>
             <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
               <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-              <div class="space-y-4">
-                <div class="flex items-start">
-                  <div class="text-blue-600 mr-3 mt-1">
-                    <i class="fas fa-envelope">
+              <div>
+               <p class="font-semibold">Email:</p>
+               <p>info@cadetpilothub.com</p>
+           </div>
+           </div>
+            <div class="flex items-start">
+           <div class="text-blue-600 mr-3 mt-1">
+              <i class="fas fa-phone"></i>
+           </div>
+               <div class="flex items-start">
+               <div class="text-b lue-600 mr-3 mt-1">
+                 <i class="fas fa-map-marker-alt"></i>
+             </div>
+             <div>
+                 <p class="font-semibold">Location:</p>
+                 <p>United Arab Emirates</p>
