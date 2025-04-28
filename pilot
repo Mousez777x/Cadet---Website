@@ -766,7 +766,7 @@
         <span>Published: March 28, 2025</span>
         <span>6 min read</span>
       </div>
-      <img src="https://wallpapercave.com/wp/wp13815839.jpg" alt="Pilot Interview" class="w-full h-64 object-cover rounded-lg mb-6">
+      <img src="https://images.pexels.com/photos/5852298/pexels-photo-5852298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
       
       <div class="blog-content">
         <p>The interview stage is often the most nerve-wracking part of the cadet pilot application process. It's your opportunity to make a strong impression and demonstrate why you're the perfect candidate for the program. Here are 10 essential tips to help you ace your pilot interview.</p>
@@ -1235,7 +1235,7 @@
           </div>
           
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 card-hover">
-            <img src="https://wallpapercave.com/wp/wp9894242.jpg" alt="Pilot Training" class="w-full h-48 object-cover rounded-lg mb-4">
+            <img src="https://images.pexels.com/photos/5262805/pexels-photo-5262805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
             <div class="flex justify-between text-sm text-gray-500 mb-2">
               <span>March 15, 2025</span>
               <span>5 min read</span>
@@ -1571,7 +1571,7 @@
               </p>
             </div>
             <div class="md:w-1/3">
-              <img src="https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Physics Preparation" class="rounded-lg shadow-md">
+              <img src="https://images.unsplash.com/photo-1544016768-982d1554f0b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
             </div>
           </div>
         </div>
@@ -1688,7 +1688,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="simulation-box">
               <h3 class="text-xl font-semibold mb-4">Airfoil Lift Simulation</h3>
-              <img src="https://wallpapercave.com/wp/wp13815839.jpg" alt="Airfoil Simulation" class="simulation-image">
+              <img src="https://images.pexels.com/photos/31623616/pexels-photo-31623616/free-photo-of-emirates-airbus-a380-in-flight-against-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
               <p class="mb-4">This interactive simulation demonstrates how airflow around an airfoil generates lift. Adjust the angle of attack and airspeed to see how they affect lift production.</p>
               <button class="test-button" onclick="toggleSimulation('airfoil-simulation')">Launch Simulation</button>
               
@@ -1749,7 +1749,7 @@
             
             <div class="simulation-box">
               <h3 class="text-xl font-semibold mb-4">Bernoulli's Principle Demonstration</h3>
-              <img src="https://wallpapercave.com/wp/wp13815864.jpg" alt="Bernoulli's Principle" class="simulation-image">
+              <img src="https://images.pexels.com/photos/747079/pexels-photo-747079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
               <p class="mb-4">This simulation visually demonstrates Bernoulli's principle, showing how fluid velocity affects pressure. See how this principle applies to aircraft wings and lift generation.</p>
               <button class="test-button" onclick="toggleSimulation('bernoulli-simulation')">Launch Simulation</button>
               
@@ -1778,7 +1778,7 @@
             
             <div class="simulation-box">
               <h3 class="text-xl font-semibold mb-4">Density Altitude Calculator</h3>
-              <img src="https://wallpapercave.com/wp/wp13815839.jpg" alt="Density Altitude" class="simulation-image">
+              <img src="https://images.pexels.com/photos/4707628/pexels-photo-4707628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
               <p class="mb-4">Calculate density altitude based on pressure altitude, temperature, and humidity. See how these factors affect aircraft performance during takeoff, climb, and landing.</p>
               <button class="test-button" onclick="toggleSimulation('density-simulation')">Launch Simulation</button>
               
